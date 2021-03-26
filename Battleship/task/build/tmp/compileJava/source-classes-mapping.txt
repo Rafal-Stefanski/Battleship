@@ -1,2 +1,0 @@
-battleship/Main.java
- battleship.Main

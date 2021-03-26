@@ -1,5 +1,10 @@
 package battleship;
 
+import battleship.ship.AircraftCarrier;
+import battleship.ship.Battleship;
+import battleship.ship.Ship;
+
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -8,60 +13,36 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static String[][] board = new String[11][11];
 
     public static void main(String[] args) {
 
         // Write your code here
 
-        prepareBoard();
-        addShip();
-        printBoard();
+        Board.prepareBoard();
+        AircraftCarrier aircraftCarrier = new AircraftCarrier();
+        Battleship battleship = new Battleship();
+
+//        addShip(aircraftCarrier);
+//        Board.printBoard();
+
+        addShip(battleship);
+        Board.printBoard();
+
 
     }
 
-    public static void prepareBoard() {
 
-//        String[][] board = new String[11][11];
 
-        for (int i = 0; i < 11; i++) {
-            System.out.println();
-            for (int j = 0; j < 11; j++) {
-                if (i == 0 && j == 0) {
-                    board[i][j] = " ";
-                } else if (i == 0) {
-                    board[i][j] = Integer.toString(j);
-                } else if (j == 0) {
-                    board[i][j] = Character.toString(64 + i);
-                } else {
-                    board[i][j] = "~";
-                }
-                System.out.print(board[i][j] + " ");
-            }
-        }
-        System.out.println("\n");
-    }
-
-    public static void printBoard() {
-        for (int i = 0; i < 11; i++) {
-            System.out.println();
-            for (int j = 0; j < 11; j++) {
-
-                System.out.print(board[i][j] + " ");
-            }
-        }
-        System.out.println("\n");
-    }
-
-    public static String[][] addShip() {
+    public static void addShip(Ship ship) {
 
         try (Scanner scanner = new Scanner(System.in)) {
-            while (true) {
+            System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
+            String coordinate1 = scanner.next();
+            String coordinate2 = scanner.next();
+            scanner.close();
 
-                System.out.print("Enter the coordinates of the Aircraft Carrier (5 cells):\n\n> ");
-                String coordinate1 = scanner.next();
-                String coordinate2 = scanner.next();
-                scanner.close();
+//            while (true) {
+
                 boolean ifHorizontal = false, ifVertical = false;
 
                 // coordinates on board
@@ -77,32 +58,35 @@ public class Main {
                     ifVertical = true;
                 } else {
                     System.out.println("Error! Wrong ship location! Try again:");
-
+//                    addShip();
                 }
 
 
                 if (ifHorizontal || ifVertical) {
-                    if (j2 - j1 == 4) {
+                    if (j2 - j1 == ship.getSize() - 1) {
                         for (int i = j1; i <= j2; i++) {
-                            board[i1][i] = "O";
+                            Board.board[i1][i] = "O";
                         }
-                    } else if (i2 - i1 == 4) {
+                    } else if (i2 - i1 == ship.getSize() - 1) {
                         for (int i = i1; i <= i2; i++) {
-                            board[i][j1] = "O";
+                            Board.board[i][j1] = "O";
                         }
                     } else {
                         System.out.println("Error! Wrong size of ship, sorry mate. Try again:");
+//                        addShip();
                     }
                 }
+                System.out.println("i1 = " + i1);
+                System.out.println("j1 = " + j1);
             }
 
-        }
+//        } catch (NoSuchElementException e) {
+//            System.out.println(e.getMessage());
+//        }
 
-//        System.out.println("i1 = " + i1);
-//        System.out.println("j1 = " + j1);
 
 
-//        return board;
+//        return Board.board;
 
     }
 }
