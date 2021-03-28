@@ -1,8 +1,6 @@
 package battleship;
 
-import battleship.ship.AircraftCarrier;
-import battleship.ship.Battleship;
-import battleship.ship.Ship;
+import battleship.ship.*;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -19,11 +17,15 @@ public class Main {
         // Write your code here
 
         Board.prepareBoard();
+
         AircraftCarrier aircraftCarrier = new AircraftCarrier();
         Battleship battleship = new Battleship();
+//        Submarine submarine = new Submarine();
+//        Cruiser cruiser = new Cruiser();
+//        Destroyer destroyer = new Destroyer();
 
-//        addShip(aircraftCarrier);
-//        Board.printBoard();
+        addShip(aircraftCarrier);
+        Board.printBoard();
 
         addShip(battleship);
         Board.printBoard();
@@ -32,17 +34,19 @@ public class Main {
     }
 
 
-
     public static void addShip(Ship ship) {
 
+        label:
         try (Scanner scanner = new Scanner(System.in)) {
+            scanner.reset();
             System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
             String coordinate1 = scanner.next();
             String coordinate2 = scanner.next();
             scanner.close();
 
-//            while (true) {
+//            boolean pickLoop = true;
 
+            while (true) {
                 boolean ifHorizontal = false, ifVertical = false;
 
                 // coordinates on board
@@ -58,11 +62,11 @@ public class Main {
                     ifVertical = true;
                 } else {
                     System.out.println("Error! Wrong ship location! Try again:");
-//                    addShip();
+                    break label;
                 }
 
 
-                if (ifHorizontal || ifVertical) {
+//                if (ifHorizontal || ifVertical) {
                     if (j2 - j1 == ship.getSize() - 1) {
                         for (int i = j1; i <= j2; i++) {
                             Board.board[i1][i] = "O";
@@ -73,18 +77,18 @@ public class Main {
                         }
                     } else {
                         System.out.println("Error! Wrong size of ship, sorry mate. Try again:");
-//                        addShip();
+                        break label;
                     }
-                }
+//                }
                 System.out.println("i1 = " + i1);
                 System.out.println("j1 = " + j1);
+//                pickLoop = false;
+                break;
             }
-
-//        } catch (NoSuchElementException e) {
-//            System.out.println(e.getMessage());
-//        }
-
-
+        }
+        catch (NoSuchElementException e) {
+            System.out.println(e.getMessage());
+        }
 
 //        return Board.board;
 
