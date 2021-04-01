@@ -36,34 +36,43 @@ public class Main {
 
     public static void addShip(Ship ship) {
 
-        label:
-        try (Scanner scanner = new Scanner(System.in)) {
-            scanner.reset();
-            System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
-            String coordinate1 = scanner.next();
-            String coordinate2 = scanner.next();
-            scanner.close();
+
+//        System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
+//        String coordinate1;
+//        String coordinate2;
+//        scanner.close();
 
 //            boolean pickLoop = true;
+        boolean whileTrue = true;
 
+        while (true) {
+
+            label:
             while (true) {
-                boolean ifHorizontal = false, ifVertical = false;
+                try (Scanner scanner = new Scanner(System.in)) {
 
-                // coordinates on board
-                int i1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;  // letter (horizontal)
-                int j1 = Integer.parseInt(coordinate1.substring(1));               // number (vertical)
 
-                int i2 = Character.toUpperCase(coordinate2.charAt(0)) - 'A' + 1;  // letter (horizontal)
-                int j2 = Integer.parseInt(coordinate2.substring(1));               // number (vertical)
+                    System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
+                    String coordinate1 = scanner.next();
+                    String coordinate2 = scanner.next();
 
-                if (i1 == i2) {
-                    ifHorizontal = true;
-                } else if (j1 == j2) {
-                    ifVertical = true;
-                } else {
-                    System.out.println("Error! Wrong ship location! Try again:");
-                    break label;
-                }
+                    boolean ifHorizontal = false, ifVertical = false;
+
+                    // coordinates on board
+                    int i1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;  // letter (horizontal)
+                    int j1 = Integer.parseInt(coordinate1.substring(1));               // number (vertical)
+
+                    int i2 = Character.toUpperCase(coordinate2.charAt(0)) - 'A' + 1;  // letter (horizontal)
+                    int j2 = Integer.parseInt(coordinate2.substring(1));               // number (vertical)
+
+                    if (i1 == i2) {
+                        ifHorizontal = true;
+                    } else if (j1 == j2) {
+                        ifVertical = true;
+                    } else {
+                        System.out.println("Error! Wrong ship location! Try again:");
+                        break label;
+                    }
 
 
 //                if (ifHorizontal || ifVertical) {
@@ -80,17 +89,13 @@ public class Main {
                         break label;
                     }
 //                }
-                System.out.println("i1 = " + i1);
-                System.out.println("j1 = " + j1);
-//                pickLoop = false;
-                break;
+                    System.out.println("i1 = " + i1);
+                    System.out.println("j1 = " + j1);
+                    break;
+                } catch (NumberFormatException NoSuchElementException) {
+                    System.out.println("ups");
+                }
             }
         }
-        catch (NoSuchElementException e) {
-            System.out.println(e.getMessage());
-        }
-
-//        return Board.board;
-
     }
 }
