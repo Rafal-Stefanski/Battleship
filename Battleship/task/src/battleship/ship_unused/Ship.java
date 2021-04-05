@@ -1,4 +1,4 @@
-package battleship.ship;
+package battleship.ship_unused;
 
 public interface Ship {
     String getName();

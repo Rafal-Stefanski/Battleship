@@ -1,4 +1,4 @@
-package battleship.ship;
+package battleship.ship_unused;
 
 public class Cruiser implements Ship{
     public static final String NAME = "Cruiser";

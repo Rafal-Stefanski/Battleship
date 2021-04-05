@@ -9,36 +9,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-//        AircraftCarrier aircraftCarrier = new AircraftCarrier();
-//        Battleship battleship = new Battleship();
-//        Submarine submarine = new Submarine();
-//        Cruiser cruiser = new Cruiser();
-//        Destroyer destroyer = new Destroyer();
-
-//        addShip(aircraftCarrier);
-//        addShip(battleship);
-//        addShip(submarine);
-//        addShip(cruiser);
-//        addShip(destroyer);
-
         Board.prepareBoard();
 
-        addShip(Ship_enum.AIRCRAFT_CARRIER);
-        addShip(Ship_enum.BATTLESHIP);
-        addShip(Ship_enum.SUBMARINE);
-        addShip(Ship_enum.CRUISER);
-        addShip(Ship_enum.DESTROYER);
-
+        addShip(Ship.AIRCRAFT_CARRIER);
+        addShip(Ship.BATTLESHIP);
+        addShip(Ship.SUBMARINE);
+        addShip(Ship.CRUISER);
+        addShip(Ship.DESTROYER);
     }
 
+    public static void addShip(Ship ship) {
 
-    public static void addShip(Ship_enum ship) {
+        // lets get some coordinates
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
         String coordinate1 = scanner.next();
         String coordinate2 = scanner.next();
-
-//        boolean horizontal = false, vertical = false, shipLength = false;
 
         // coordinates on board
         int x1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;  // letter (horizontal)
@@ -49,12 +35,25 @@ public class Main {
 
         // checking and validating coordinates range and placement on the board
         if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10 && x2 > 0 && y2 > 0 && x2 <= 10 && y2 <= 10) {
+            // changing places when first value is larger
+            if (x1 > x2) {
+                int tempX1 = x2;
+                x2 = x1;
+                x1 = tempX1;
+            }
+            if (y1 > y2) {
+                int tempY1 = y2;
+                y2 = y1;
+                y1 = tempY1;
+            }
+
+            // checking positions
             if (x1 == x2) {                             // it's horizontal!
                 if ((y2 - y1 + 1) == ship.getSize()) {  // ship size is OK!
-                    System.out.println("size OK!");
+//                    System.out.println("size OK!");
                     for (int i = y1; i <= y2; i++) {
-                            Board.board[x1][i] = "O";
-                        }
+                        Board.board[x1][i] = "O";
+                    }
                     Board.printBoard();
                 } else {
                     System.out.println("Error! Wrong ship size! Try again.");
@@ -62,7 +61,7 @@ public class Main {
                 }
             } else if (y1 == y2) {                      // it's vertical!
                 if ((x2 - x1 + 1) == ship.getSize()) {  // ship size is OK!
-                    System.out.println("size OK!");
+//                    System.out.println("size OK!");
                     for (int i = x1; i <= x2; i++) {
                         Board.board[i][y1] = "O";
                     }
@@ -79,75 +78,8 @@ public class Main {
             System.out.println("Error! Wrong ship location! Looks like it's out of board range. Try again.");
             addShip(ship);
         }
-
-
     }
 
-
-//    public static void addShip(Ship ship) {
-//
-//
-////        System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
-////        String coordinate1;
-////        String coordinate2;
-////        scanner.close();
-//
-////            boolean pickLoop = true;
-//        boolean whileTrue = true;
-//
-//        while (true) {
-//
-//            label:
-//            while (true) {
-//                try (Scanner scanner = new Scanner(System.in)) {
-//
-//
-//                    System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
-//                    String coordinate1 = scanner.next();
-//                    String coordinate2 = scanner.next();
-//
-//                    boolean ifHorizontal = false, ifVertical = false;
-//
-//                    // coordinates on board
-//                    int i1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;  // letter (horizontal)
-//                    int j1 = Integer.parseInt(coordinate1.substring(1));               // number (vertical)
-//
-//                    int i2 = Character.toUpperCase(coordinate2.charAt(0)) - 'A' + 1;  // letter (horizontal)
-//                    int j2 = Integer.parseInt(coordinate2.substring(1));               // number (vertical)
-//
-//                    if (i1 == i2) {
-//                        ifHorizontal = true;
-//                    } else if (j1 == j2) {
-//                        ifVertical = true;
-//                    } else {
-//                        System.out.println("Error! Wrong ship location! Try again:");
-//                        break label;
-//                    }
-//
-//
-////                if (ifHorizontal || ifVertical) {
-//                    if (j2 - j1 == ship.getSize() - 1) {
-//                        for (int i = j1; i <= j2; i++) {
-//                            Board.board[i1][i] = "O";
-//                        }
-//                    } else if (i2 - i1 == ship.getSize() - 1) {
-//                        for (int i = i1; i <= i2; i++) {
-//                            Board.board[i][j1] = "O";
-//                        }
-//                    } else {
-//                        System.out.println("Error! Wrong size of ship, sorry mate. Try again:");
-//                        break label;
-//                    }
-////                }
-//                    System.out.println("i1 = " + i1);
-//                    System.out.println("j1 = " + j1);
-//                    break;
-//                } catch (NumberFormatException NoSuchElementException) {
-//                    System.out.println("ups");
-//                }
-//            }
-//        }
-//    }
 
     public static void fastCheck() {
 
