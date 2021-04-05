@@ -1,7 +1,7 @@
 package battleship.ship;
 
 public class AircraftCarrier implements Ship {
-    public static final String NAME = "AircraftCarrier";
+    public static final String NAME = "Aircraft Carrier";
     public static final int SIZE = 5;
 
     @Override

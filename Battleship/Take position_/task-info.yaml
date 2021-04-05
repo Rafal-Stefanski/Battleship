@@ -285,21 +285,31 @@ files:
         }
     }
   learner_created: false
+- name: src/battleship/Ship_enum.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/663/implement#comment
 status: Failed
 feedback:
-  message: "Wrong answer in test #1\n\nAfter asking for the Aircraft Carrier coordinates,\
-    \ you should request the coordinates of the Battleship in that way:\n&quot;Enter\
-    \ the coordinates of the Battleship (4 cells):&quot;\n\nPlease find below the\
-    \ output of your program during this failed test.\nNote that the &#39;&gt;&#39;\
-    \ character indicates the beginning of the input line.\n\n---\n\n\n  1 2 3 4 5\
-    \ 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nEnter the coordinates of the Aircraft Carrier (5 cells):\n\
-    \n&gt; &gt; F3 F7\n\n  1 2 3 4 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
-  time: Tue, 23 Mar 2021 21:14:04 UTC
+  message: "Wrong answer in test #1\n\nCan&#39;t parse the game field\nMake sure you\
+    \ print it like in examples!\n\nPlease find below the output of your program during\
+    \ this failed test.\nNote that the &#39;&gt;&#39; character indicates the beginning\
+    \ of the input line.\n\n---\n\n\n  1 2 3 4 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
+    E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nEnter the\
+    \ coordinates of the Aircraft Carrier (5 cells):\n&gt; F3 F7\nsize OK!\n\n  1\
+    \ 2 3 4 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O\
+    \ O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nEnter the coordinates of the Battleship (4\
+    \ cells):\n&gt; A1 D1\nsize OK!\n\n  1 2 3 4 5 6 7 8 9 10 \nA O ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD O ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nEnter\
+    \ the coordinates of the Submarine (3 cells):\n&gt; J7 J10\nError! Wrong ship\
+    \ size! Try again.\nEnter the coordinates of the Submarine (3 cells):\n&gt; J10\
+    \ J8\nError! Wrong ship size! Try again.\nEnter the coordinates of the Submarine\
+    \ (3 cells):"
+  time: Mon, 05 Apr 2021 07:27:50 UTC
 record: -1

@@ -1,41 +1,39 @@
 package battleship;
 
-import battleship.ship.*;
-
-import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Rules of the game Battleship https://en.wikipedia.org/wiki/Battleship_(game)
  */
 
 public class Main {
-
-
     public static void main(String[] args) {
 
-        // Write your code here
+//        AircraftCarrier aircraftCarrier = new AircraftCarrier();
+//        Battleship battleship = new Battleship();
+//        Submarine submarine = new Submarine();
+//        Cruiser cruiser = new Cruiser();
+//        Destroyer destroyer = new Destroyer();
+
+//        addShip(aircraftCarrier);
+//        addShip(battleship);
+//        addShip(submarine);
+//        addShip(cruiser);
+//        addShip(destroyer);
 
         Board.prepareBoard();
-        AircraftCarrier aircraftCarrier = new AircraftCarrier();
-        Battleship battleship = new Battleship();
-        Submarine submarine = new Submarine();
-        Cruiser cruiser = new Cruiser();
-        Destroyer destroyer = new Destroyer();
 
-        addShip(aircraftCarrier);
-//
-        addShip(battleship);
-
+        addShip(Ship_enum.AIRCRAFT_CARRIER);
+        addShip(Ship_enum.BATTLESHIP);
+        addShip(Ship_enum.SUBMARINE);
+        addShip(Ship_enum.CRUISER);
+        addShip(Ship_enum.DESTROYER);
 
     }
 
 
-    public static void addShip(Ship ship) {
+    public static void addShip(Ship_enum ship) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
         String coordinate1 = scanner.next();
         String coordinate2 = scanner.next();
@@ -51,30 +49,24 @@ public class Main {
 
         // checking and validating coordinates range and placement on the board
         if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10 && x2 > 0 && y2 > 0 && x2 <= 10 && y2 <= 10) {
-            if (x1 == x2) {
-//                horizontal = true;    // it's horizontal
-                if ((y2 - y1 + 1) == ship.getSize()) {
-//                    shipLength = true;
+            if (x1 == x2) {                             // it's horizontal!
+                if ((y2 - y1 + 1) == ship.getSize()) {  // ship size is OK!
                     System.out.println("size OK!");
                     for (int i = y1; i <= y2; i++) {
                             Board.board[x1][i] = "O";
                         }
                     Board.printBoard();
-
                 } else {
                     System.out.println("Error! Wrong ship size! Try again.");
                     addShip(ship);
                 }
-            } else if (y1 == y2) {
-//                vertical = true;    // it's vertical!
-                if ((x2 - x1 + 1) == ship.getSize()) {
-//                    shipLength = true;
+            } else if (y1 == y2) {                      // it's vertical!
+                if ((x2 - x1 + 1) == ship.getSize()) {  // ship size is OK!
                     System.out.println("size OK!");
                     for (int i = x1; i <= x2; i++) {
                         Board.board[i][y1] = "O";
                     }
                     Board.printBoard();
-
                 } else {
                     System.out.println("Error! Wrong ship size! Try again.");
                     addShip(ship);
@@ -83,8 +75,6 @@ public class Main {
                 System.out.println("Error! Wrong ship location! Looks like it's cross-draw. Try again.");
                 addShip(ship);
             }
-
-
         } else {
             System.out.println("Error! Wrong ship location! Looks like it's out of board range. Try again.");
             addShip(ship);
