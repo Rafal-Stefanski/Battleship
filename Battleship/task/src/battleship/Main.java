@@ -18,66 +18,108 @@ public class Main {
         addShip(Ship.DESTROYER);
     }
 
+    public static Scanner scanner = new Scanner(System.in);
+
     public static void addShip(Ship ship) {
 
         // lets get some coordinates
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n\n> ");
-        String coordinate1 = scanner.next();
-        String coordinate2 = scanner.next();
+        scanner.reset();
+        scanner = new Scanner(System.in);
 
-        // coordinates on board
-        int x1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;  // letter (horizontal)
-        int y1 = Integer.parseInt(coordinate1.substring(1));               // number (vertical)
+        label:
+        while (true) {
+            System.out.print("Enter the coordinates of the " + ship.getName() + " (" + ship.getSize() + " cells):\n> ");
+            String coordinate1 = scanner.next();
+            String coordinate2 = scanner.next();
 
-        int x2 = Character.toUpperCase(coordinate2.charAt(0)) - 'A' + 1;  // letter (horizontal)
-        int y2 = Integer.parseInt(coordinate2.substring(1));               // number (vertical)
+            // coordinates on board to ints
+            int x1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;  // letter (horizontal)
+            int y1 = Integer.parseInt(coordinate1.substring(1));               // number (vertical)
 
-        // checking and validating coordinates range and placement on the board
-        if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10 && x2 > 0 && y2 > 0 && x2 <= 10 && y2 <= 10) {
-            // changing places when first value is larger
-            if (x1 > x2) {
-                int tempX1 = x2;
-                x2 = x1;
-                x1 = tempX1;
-            }
-            if (y1 > y2) {
-                int tempY1 = y2;
-                y2 = y1;
-                y1 = tempY1;
-            }
+            int x2 = Character.toUpperCase(coordinate2.charAt(0)) - 'A' + 1;  // letter (horizontal)
+            int y2 = Integer.parseInt(coordinate2.substring(1));               // number (vertical)
 
-            // checking positions
-            if (x1 == x2) {                             // it's horizontal!
-                if ((y2 - y1 + 1) == ship.getSize()) {  // ship size is OK!
-//                    System.out.println("size OK!");
-                    for (int i = y1; i <= y2; i++) {
-                        Board.board[x1][i] = "O";
-                    }
-                    Board.printBoard();
-                } else {
-                    System.out.println("Error! Wrong ship size! Try again.");
-                    addShip(ship);
+            // checking and validating coordinates range and placement on the board
+            if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10 && x2 > 0 && y2 > 0 && x2 <= 10 && y2 <= 10) {
+                // changing places when first value is larger
+                if (x1 > x2) {
+                    int tempX1 = x2;
+                    x2 = x1;
+                    x1 = tempX1;
                 }
-            } else if (y1 == y2) {                      // it's vertical!
-                if ((x2 - x1 + 1) == ship.getSize()) {  // ship size is OK!
+                if (y1 > y2) {
+                    int tempY1 = y2;
+                    y2 = y1;
+                    y1 = tempY1;
+                }
+
+                // checking positions
+                if (x1 == x2) {                             // it's horizontal!
+                    if ((y2 - y1 + 1) == ship.getSize()) {  // ship size is OK!
 //                    System.out.println("size OK!");
-                    for (int i = x1; i <= x2; i++) {
-                        Board.board[i][y1] = "O";
+
+                        //checking placement on the board for collisions and overlapping - horizontally
+                        for (int i = y1; i <= y2; i++) {
+                            if (Board.board[x1][i].equals("O")) {
+                                System.out.println("Error! This place is occupied.\n");
+                                continue label;
+                            }
+                            if (x1 != 1 && x1 != 10) {
+                                if (Board.board[x1 + 1][i].equals("O") || Board.board[x1 - 1][i].equals("O")) {
+                                    System.out.println("Error! There is other ship over or under next to this place.\n");
+                                    continue label;
+                                }
+                            } else if (x1 == 1) {
+                                if (Board.board[x1 + 1][i].equals("O")) {
+                                    System.out.println("Error! There is other ship below, next to this place.\n");
+                                    continue label;
+                                }
+                            } else {
+                                if (Board.board[x1 - 1][i].equals("O")) {
+                                    System.out.println("Error! There is other ship below, next to this place.\n");
+                                    continue label;
+                                }
+                            }
+                            if (y2 != 10 ) {
+                                if (Board.board[x1][y1 - 1].equals("O") || Board.board[x1][y2 + 1].equals("O")) {
+                                    System.out.println("Error! There is other ship on the left or right next to this place.\n");
+                                    continue label;
+                                }
+                            } else {
+                                if (Board.board[x1][y1 - 1].equals("O")) {
+                                    System.out.println("Error! There is other ship on the left next to this place.\n");
+                                    continue label;
+                                }
+                            }
+                        }
+
+
+                        for (int i = y1; i <= y2; i++) {
+                            Board.board[x1][i] = "O";
+                        }
+                        Board.printBoard();
+                        break;
+                    } else {
+                        System.out.println("Error! Wrong ship size! Try again.\n");
                     }
-                    Board.printBoard();
+                } else if (y1 == y2) {                      // it's vertical!
+                    if ((x2 - x1 + 1) == ship.getSize()) {  // ship size is OK!
+//                    System.out.println("size OK!");
+                        for (int i = x1; i <= x2; i++) {
+                            Board.board[i][y1] = "O";
+                        }
+                        Board.printBoard();
+                        break;
+                    } else {
+                        System.out.println("Error! Wrong ship size! Try again.\n");
+                    }
                 } else {
-                    System.out.println("Error! Wrong ship size! Try again.");
-                    addShip(ship);
+                    System.out.println("Error! Wrong ship location! Looks like it's cross-draw. Try again.\n");
                 }
             } else {
-                System.out.println("Error! Wrong ship location! Looks like it's cross-draw. Try again.");
-                addShip(ship);
+                System.out.println("Error! Wrong location! Looks like it's out of board range. Try again.\n");
             }
-        } else {
-            System.out.println("Error! Wrong ship location! Looks like it's out of board range. Try again.");
-            addShip(ship);
-        }
+        }   // end of while loop
     }
 
 

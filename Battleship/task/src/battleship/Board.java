@@ -33,4 +33,8 @@ public class Board {
         }
         System.out.println("\n");
     }
+
+    public static void collisionCheck() {
+
+    }
 }
