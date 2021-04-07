@@ -58,22 +58,23 @@ public class Main {
                     if ((y2 - y1 + 1) == ship.getSize()) {  // ship size is OK!
 //                    System.out.println("size OK!");
 
+
                         //checking placement on the board for collisions and overlapping - horizontally
                         for (int i = y1; i <= y2; i++) {
                             if (Board.board[x1][i].equals("O")) {
                                 System.out.println("Error! This place is occupied.\n");
                                 continue label;
                             }
-                            if (x1 != 1 && x1 != 10) {
+                            if (x1 != 10) {
                                 if (Board.board[x1 + 1][i].equals("O") || Board.board[x1 - 1][i].equals("O")) {
                                     System.out.println("Error! There is other ship over or under next to this place.\n");
                                     continue label;
                                 }
-                            } else if (x1 == 1) {
-                                if (Board.board[x1 + 1][i].equals("O")) {
-                                    System.out.println("Error! There is other ship below, next to this place.\n");
-                                    continue label;
-                                }
+//                            } else if (x1 == 1) {
+//                                if (Board.board[x1 + 1][i].equals("O")) {
+//                                    System.out.println("Error! There is other ship below, next to this place.\n");
+//                                    continue label;
+//                                }
                             } else {
                                 if (Board.board[x1 - 1][i].equals("O")) {
                                     System.out.println("Error! There is other ship below, next to this place.\n");
@@ -93,7 +94,6 @@ public class Main {
                             }
                         }
 
-
                         for (int i = y1; i <= y2; i++) {
                             Board.board[x1][i] = "O";
                         }
@@ -105,6 +105,44 @@ public class Main {
                 } else if (y1 == y2) {                      // it's vertical!
                     if ((x2 - x1 + 1) == ship.getSize()) {  // ship size is OK!
 //                    System.out.println("size OK!");
+
+
+                        //checking placement on the board for collisions and overlapping - vertically
+                        for (int i = x1; i <= x2; i++) {
+                            if (Board.board[i][y1].equals("O")) {
+                                System.out.println("Error! This place is occupied.\n");
+                                continue label;
+                            }
+                            if (x2 != 10) {
+                                if (Board.board[i + 1][y1].equals("O") || Board.board[i - 1][y1].equals("O")) {
+                                    System.out.println("Error! There is other ship over or under next to this place.\n");
+                                    continue label;
+                                }
+//                            } else if (y1 == 1) {
+//                                if (Board.board[i][y1 + 1].equals("O")) {
+//                                    System.out.println("Error! There is other ship below, next to this place.\n");
+//                                    continue label;
+//                                }
+//                            } else {
+//                                if (Board.board[i - 1][y1].equals("O")) {                      // possibly unnecessary !
+//                                    System.out.println("Error! There is other ship above.\n");
+//                                    continue label;
+//                                }
+                            }
+                            if (y1 != 10 ) {
+                                if (Board.board[i][y1 - 1].equals("O") || Board.board[i][y2 + 1].equals("O")) {
+                                    System.out.println("Error! There is other ship on the left or right next to this place.\n");
+                                    continue label;
+                                }
+                            } else {
+                                if (Board.board[i][y1 - 1].equals("O")) {
+                                    System.out.println("Error! There is other ship on the left next to this place.\n");
+                                    continue label;
+                                }
+                            }
+                        }
+
+
                         for (int i = x1; i <= x2; i++) {
                             Board.board[i][y1] = "O";
                         }

@@ -1,18 +1,6 @@
-battleship/ship_unused/Ship.java
- battleship.ship_unused.Ship
 battleship/Board.java
  battleship.Board
 battleship/Main.java
  battleship.Main
-battleship/ship_unused/Submarine.java
- battleship.ship_unused.Submarine
-battleship/ship_unused/Cruiser.java
- battleship.ship_unused.Cruiser
-battleship/ship_unused/Battleship.java
- battleship.ship_unused.Battleship
 battleship/Ship.java
  battleship.Ship
-battleship/ship_unused/AircraftCarrier.java
- battleship.ship_unused.AircraftCarrier
-battleship/ship_unused/Destroyer.java
- battleship.ship_unused.Destroyer
