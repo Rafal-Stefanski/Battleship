@@ -16,7 +16,10 @@ public class Main {
         addShip(Ship.SUBMARINE);
         addShip(Ship.CRUISER);
         addShip(Ship.DESTROYER);
+
+        GamePlay.play(Board.board);
     }
+
 
     public static Scanner scanner = new Scanner(System.in);
 
