@@ -17,7 +17,7 @@ public class Main {
         addShip(Ship.CRUISER);
         addShip(Ship.DESTROYER);
 
-        GamePlay.play(Board.board);
+        Game.play(Board.board);
     }
 
 
