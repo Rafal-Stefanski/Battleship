@@ -2,5 +2,7 @@ battleship/Board.java
  battleship.Board
 battleship/Main.java
  battleship.Main
+battleship/Game.java
+ battleship.Game
 battleship/Ship.java
  battleship.Ship
