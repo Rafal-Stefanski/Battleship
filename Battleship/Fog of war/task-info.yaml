@@ -557,6 +557,122 @@ files:
         }
     }
   learner_created: false
+- name: src/battleship/Board.java
+  visible: true
+  text: |
+    package battleship;
+
+    public class Board {
+        public static String[][] board = new String[11][11];
+
+        public static void prepareBoard() {
+
+            for (int i = 0; i < 11; i++) {
+                System.out.println();
+                for (int j = 0; j < 11; j++) {
+                    if (i == 0 && j == 0) {
+                        board[i][j] = " ";
+                    } else if (i == 0) {
+                        board[i][j] = Integer.toString(j);
+                    } else if (j == 0) {
+                        board[i][j] = Character.toString(64 + i);
+                    } else {
+                        board[i][j] = "~";
+                    }
+                    System.out.print(board[i][j] + " ");
+                }
+            }
+            System.out.println("\n");
+        }
+
+        public static void printBoard() {
+            for (int i = 0; i < 11; i++) {
+                System.out.println();
+                for (int j = 0; j < 11; j++) {
+
+                    System.out.print(board[i][j] + " ");
+                }
+            }
+            System.out.println("\n");
+        }
+    }
+  learner_created: true
+- name: src/battleship/Ship.java
+  visible: true
+  text: |
+    package battleship;
+
+    public enum Ship {
+
+        AIRCRAFT_CARRIER("Aircraft Carrier", 5),
+        BATTLESHIP("Battleship",4),
+        SUBMARINE("Submarine", 3),
+        CRUISER("Cruiser", 3),
+        DESTROYER("Destroyer", 2);
+
+        public final String name;
+        public final int size;
+
+        Ship(String name, int size) {
+            this.name = name;
+            this.size = size;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getSize() {
+            return size;
+        }
+    }
+  learner_created: true
+- name: src/battleship/Game.java
+  visible: true
+  text: |
+    package battleship;
+
+    import java.util.Scanner;
+
+    public class Game {
+
+        public static void play(String[][] board) {
+
+            boolean shotLoop = true;
+            System.out.println("The game starts!");
+            Board.printBoard();
+            System.out.print("Take a shot!\n\n> ");
+
+            // checking and validating coordinates range and placement on the board
+            while (shotLoop) {
+                Main.scanner.reset();
+                Main.scanner = new Scanner(System.in);
+                String shotCoordinate = Main.scanner.next();
+                // coordinates on board to ints
+                int x1 = Character.toUpperCase(shotCoordinate.charAt(0)) - 'A' + 1;  // letter (horizontal)
+                int y1 = Integer.parseInt(shotCoordinate.substring(1));               // number (vertical)
+                if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10) {
+                    if (Board.board[x1][y1].equals("O")) {
+                        Board.board[x1][y1] = "X";
+                        Board.printBoard();
+                        System.out.println("You hit a ship!");
+                    } else {
+                        Board.board[x1][y1] = "M";
+                        Board.printBoard();
+                        System.out.println("You missed!");
+                    }
+                    shotLoop = false;
+                    break;
+                } else {
+                    System.out.print("\nError! You entered the wrong coordinates! Try again:\n\n> ");
+                }
+            }
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/665/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 09 Apr 2021 19:16:00 UTC
 record: -1
