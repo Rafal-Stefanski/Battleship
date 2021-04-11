@@ -10,10 +10,10 @@ public class Main {
         Board.prepareBoard();
 
         Game.addShip(Ship.AIRCRAFT_CARRIER);
-        Game.addShip(Ship.BATTLESHIP);
-        Game.addShip(Ship.SUBMARINE);
-        Game.addShip(Ship.CRUISER);
-        Game.addShip(Ship.DESTROYER);
+//        Game.addShip(Ship.BATTLESHIP);
+//        Game.addShip(Ship.SUBMARINE);
+//        Game.addShip(Ship.CRUISER);
+//        Game.addShip(Ship.DESTROYER);
 
         Game.play();
     }

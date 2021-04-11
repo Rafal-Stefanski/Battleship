@@ -158,20 +158,22 @@ public class Game {
             int x1 = Character.toUpperCase(shotCoordinate.charAt(0)) - 'A' + 1;  // letter (horizontal)
             int y1 = Integer.parseInt(shotCoordinate.substring(1));               // number (vertical)
             if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10) {
-                if (Board.board[x1][y1].equals("O")) {
+                if (Board.board[x1][y1].equals("M") || Board.board[x1][y1].equals("X")) {
+                    System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
+                }else if (Board.board[x1][y1].equals("O")) {
                     Board.board[x1][y1] = "X";
                     Board.hiddenBoard[x1][y1] = "X";
                     Board.printHiddenBoard();
-                    System.out.println("You hit a ship!");
+                    System.out.print("\nYou hit a ship! Try again:\n\n> ");
+//                    Board.checker();
                 } else {
                     Board.board[x1][y1] = "M";
                     Board.hiddenBoard[x1][y1] = "M";
                     Board.printHiddenBoard();
-                    System.out.println("You missed!");
+                    System.out.print("You missed! Try again:\n\n> ");
                 }
-                Board.printBoard();
-//                shotLoop = false;
-                break;
+//                Board.printBoard();
+//                break;
             } else {
                 System.out.print("\nError! You entered the wrong coordinates! Try again:\n\n> ");
             }
