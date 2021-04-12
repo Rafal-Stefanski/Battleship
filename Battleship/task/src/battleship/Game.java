@@ -144,12 +144,14 @@ public class Game {
 
     public static void play() {
 
-//        boolean shotLoop = true;
+        int shipCounter = (5 + 4 + 3 + 3 + 2);
+//        int shipCounter = 2;  // test counter
+
         System.out.println("The game starts!");
         Board.printHiddenBoard();
         System.out.print("Take a shot!\n\n> ");
 
-        // checking and validating coordinates range and placement on the board
+        // scanning, checking and validating shots coordinates.
         while (true) {
             scanner.reset();
             scanner = new Scanner(System.in);
@@ -159,13 +161,23 @@ public class Game {
             int y1 = Integer.parseInt(shotCoordinate.substring(1));               // number (vertical)
             if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10) {
                 if (Board.board[x1][y1].equals("M") || Board.board[x1][y1].equals("X")) {
-                    System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
-                }else if (Board.board[x1][y1].equals("O")) {
+//                    System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
+                    System.out.print("\nYou hit a ship! Try again:\n> ");
+
+                } else if (Board.board[x1][y1].equals("O")) {
                     Board.board[x1][y1] = "X";
                     Board.hiddenBoard[x1][y1] = "X";
+                    shipCounter--;
                     Board.printHiddenBoard();
-                    System.out.print("\nYou hit a ship! Try again:\n\n> ");
-//                    Board.checker();
+                    if (Board.checker(x1, y1)) {
+                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
+                    } else if (!Board.checker(x1, y1) && shipCounter == 0) {
+                        System.out.println("You sank the last ship. You won. Congratulations!");
+                        break;
+                    } else {
+                        System.out.println("You sank a ship!");
+                    }
+
                 } else {
                     Board.board[x1][y1] = "M";
                     Board.hiddenBoard[x1][y1] = "M";
