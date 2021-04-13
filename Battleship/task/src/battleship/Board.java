@@ -50,16 +50,41 @@ public class Board {
 
     public static boolean checker(int x, int y) {
         boolean shipLeft = false;
+        int no = 0;
 
         if (x < 10) {
-            shipLeft = Board.board[x - 1][y].equals("O") || Board.board[x + 1][y].equals("O");
+            if (Board.board[x - 1][y].equals("O") || Board.board[x + 1][y].equals("O")) {
+                shipLeft = true;
+                no++;
+            } else {
+                shipLeft = false;
+            }
         } else if (x == 10) {
-            shipLeft = Board.board[x - 1][y].equals("O");
+            if (Board.board[x - 1][y].equals("O")) {
+                shipLeft = true;
+                no++;
+            } else {
+                shipLeft = false;
+            }
         }
         if (y < 10) {
-            shipLeft = Board.board[x][y - 1].equals("O") || Board.board[x][y + 1].equals("O");
+            if (Board.board[x][y - 1].equals("O") || Board.board[x][y + 1].equals("O")) {
+                shipLeft = true;
+                no++;
+            } else {
+                shipLeft = false;
+            }
         } else if (y == 10) {
-            shipLeft = Board.board[x][y - 1].equals("O");
+            if (Board.board[x][y - 1].equals("O")) {
+                shipLeft = true;
+                no++;
+            } else {
+                shipLeft = false;
+            }
+        }
+
+        if (no > 1) {
+            shipLeft = true;
         }
         return shipLeft;
     }
