@@ -144,8 +144,8 @@ public class Game {
 
     public static void play() {
 
-        int shipCounter = (5 + 4 + 3 + 3 + 2);
-//        int shipCounter = 2;  // test counter
+//        int shipCounter = (5 + 4 + 3 + 3 + 2);
+        int shipCounter = 5;  // test counter
 
         System.out.println("The game starts!");
         Board.printHiddenBoard();
