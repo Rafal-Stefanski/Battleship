@@ -8,12 +8,19 @@ public enum Ship {
     CRUISER("Cruiser", 3),
     DESTROYER("Destroyer", 2);
 
-    public final String name;
-    public final int size;
+    public String name;
+    public int size;
+    public int[] location;
 
     Ship(String name, int size) {
         this.name = name;
         this.size = size;
+        this.location = new int[getSize()];
+    }
+
+    Ship(String name, int[] location) {
+        this.name = name;
+        this.location = location;
     }
 
     public String getName() {

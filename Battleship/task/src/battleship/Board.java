@@ -1,10 +1,18 @@
 package battleship;
 
 public class Board {
-    public static String[][] board = new String[11][11];
-    public static String[][] hiddenBoard = new String[11][11];
+    private String[][] board = new String[11][11];
+    private String[][] hiddenBoard = new String[11][11];
 
-    public static void prepareBoard() {
+    public String[][] getBoard() {
+        return board;
+    }
+
+    public String[][] getHiddenBoard() {
+        return hiddenBoard;
+    }
+
+    public void prepareBoardAndHiddenBoard() {
 
         for (int i = 0; i < 11; i++) {
             System.out.println();
@@ -28,7 +36,7 @@ public class Board {
         System.out.println("\n");
     }
 
-    public static void printBoard() {
+    public void printBoard() {
         for (int i = 0; i < 11; i++) {
             System.out.println();
             for (int j = 0; j < 11; j++) {
@@ -38,7 +46,7 @@ public class Board {
         System.out.println("\n");
     }
 
-    public static void printHiddenBoard() {
+    public void printHiddenBoard() {
         for (int i = 0; i < 11; i++) {
             System.out.println();
             for (int j = 0; j < 11; j++) {
@@ -48,19 +56,19 @@ public class Board {
         System.out.println("\n");
     }
 
-    public static boolean checker(int x, int y) {
+    public boolean checker(int x, int y) {
         boolean shipLeft = false;
         int no = 0;
 
         if (x < 10) {
-            if (Board.board[x - 1][y].equals("O") || Board.board[x + 1][y].equals("O")) {
+            if (board[x - 1][y].equals("O") || board[x + 1][y].equals("O")) {
                 shipLeft = true;
                 no++;
             } else {
                 shipLeft = false;
             }
         } else if (x == 10) {
-            if (Board.board[x - 1][y].equals("O")) {
+            if (board[x - 1][y].equals("O")) {
                 shipLeft = true;
                 no++;
             } else {
@@ -68,14 +76,14 @@ public class Board {
             }
         }
         if (y < 10) {
-            if (Board.board[x][y - 1].equals("O") || Board.board[x][y + 1].equals("O")) {
+            if (board[x][y - 1].equals("O") || board[x][y + 1].equals("O")) {
                 shipLeft = true;
                 no++;
             } else {
                 shipLeft = false;
             }
         } else if (y == 10) {
-            if (Board.board[x][y - 1].equals("O")) {
+            if (board[x][y - 1].equals("O")) {
                 shipLeft = true;
                 no++;
             } else {

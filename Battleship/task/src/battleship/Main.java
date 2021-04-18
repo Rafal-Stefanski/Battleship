@@ -5,17 +5,20 @@ package battleship;
  */
 
 public class Main {
+
     public static void main(String[] args) {
 
-        Board.prepareBoard();
+        Game game = new Game();
+        Board board = new Board();
+        game.prepareBoard();
 
-        Game.addShip(Ship.AIRCRAFT_CARRIER);
-//        Game.addShip(Ship.BATTLESHIP);
-//        Game.addShip(Ship.SUBMARINE);
-//        Game.addShip(Ship.CRUISER);
-//        Game.addShip(Ship.DESTROYER);
+        game.addShip(Ship.AIRCRAFT_CARRIER);
+//        game.addShip(Ship.BATTLESHIP);
+//        game.addShip(Ship.SUBMARINE);
+//        game.addShip(Ship.CRUISER);
+//        game.addShip(Ship.DESTROYER);
 
-        Game.play();
+        game.play();
     }
 
 
