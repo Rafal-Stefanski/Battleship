@@ -1,5 +1,7 @@
 package battleship;
 
+import java.util.Arrays;
+
 /**
  * Rules of the game Battleship https://en.wikipedia.org/wiki/Battleship_(game)
  */
@@ -12,11 +14,17 @@ public class Main {
         Board board = new Board();
         game.prepareBoard();
 
-        game.addShip(Ship.AIRCRAFT_CARRIER);
-//        game.addShip(Ship.BATTLESHIP);
-//        game.addShip(Ship.SUBMARINE);
+//        game.addShip(Ship.AIRCRAFT_CARRIER);
+        game.addShip(Ship.BATTLESHIP);
+        game.addShip(Ship.SUBMARINE);
 //        game.addShip(Ship.CRUISER);
 //        game.addShip(Ship.DESTROYER);
+
+
+        System.out.println("******* test section ********");
+//        System.out.println(">> testing ship's locations array:\n>> " + Ship.AIRCRAFT_CARRIER + Arrays.toString(Ship.AIRCRAFT_CARRIER.getLoc()));
+        System.out.println(">> testing ship's locations array:\n>> " + Ship.BATTLESHIP + Arrays.toString(Ship.BATTLESHIP.getLoc()));
+        System.out.println(">> testing ship's locations array:\n>> " + Ship.SUBMARINE + Arrays.toString(Ship.SUBMARINE.getLoc()));
 
         game.play();
     }

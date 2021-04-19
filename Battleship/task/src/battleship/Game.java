@@ -1,11 +1,11 @@
 package battleship;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
 
     private final Board board = new Board();
-
     public static Scanner scanner = new Scanner(System.in);
 
     public void prepareBoard() {
@@ -13,6 +13,8 @@ public class Game {
     }
 
     public void addShip(Ship ship) {
+        // added array to store location of each ship
+        int[] arrayOfShipLocations = new int[ship.getSize()];
 
         // lets get some coordinates
         scanner.reset();
@@ -61,11 +63,6 @@ public class Game {
                                     System.out.println("Error! There is other ship over or under next to this place.\n");
                                     continue label;
                                 }
-//                            } else if (x1 == 1) {
-//                                if (Board.board[x1 + 1][i].equals("O")) {
-//                                    System.out.println("Error! There is other ship below, next to this place.\n");
-//                                    continue label;
-//                                }
                             } else {
                                 if (board.getBoard()[x1 - 1][i].equals("O")) {
                                     System.out.println("Error! There is other ship below, next to this place.\n");
@@ -84,10 +81,18 @@ public class Game {
                                 }
                             }
                         }
+                        int j = 0;
                         for (int i = y1; i <= y2; i++) {
                             board.getBoard()[x1][i] = "O";
+                            arrayOfShipLocations[j] = (x1 * 10 + i);
+                            j++;
                         }
+                        ship.setLoc(arrayOfShipLocations);
                         board.printBoard();
+                        // remove test below!
+                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getLoc()));
+//                        System.out.println(Arrays.toString(ship.getLoc()));
+
                         break;
                     } else {
                         System.out.println("Error! Wrong ship size! Try again.\n");
@@ -107,16 +112,6 @@ public class Game {
                                     System.out.println("Error! There is other ship over or under next to this place.\n");
                                     continue label;
                                 }
-//                            } else if (y1 == 1) {
-//                                if (board.getBoard()[i][y1 + 1].equals("O")) {
-//                                    System.out.println("Error! There is other ship below, next to this place.\n");
-//                                    continue label;
-//                                }
-//                            } else {
-//                                if (board.getBoard()[i - 1][y1].equals("O")) {                      // possibly unnecessary !
-//                                    System.out.println("Error! There is other ship above.\n");
-//                                    continue label;
-//                                }
                             }
                             if (y1 != 10) {
                                 if (board.getBoard()[i][y1 - 1].equals("O") || board.getBoard()[i][y2 + 1].equals("O")) {
@@ -130,11 +125,17 @@ public class Game {
                                 }
                             }
                         }
-
+                        int j = 0;
                         for (int i = x1; i <= x2; i++) {
                             board.getBoard()[i][y1] = "O";
+                            arrayOfShipLocations[j] = (i * 10 + y1);
+                            j++;
                         }
                         board.printBoard();
+                        ship.setLoc(arrayOfShipLocations);
+                        // remove test below!
+                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getLoc()));
+
                         break;
                     } else {
                         System.out.println("Error! Wrong ship size! Try again.\n");
