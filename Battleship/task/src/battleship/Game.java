@@ -166,10 +166,11 @@ public class Game {
             // coordinates on board to ints
             int x1 = Character.toUpperCase(shotCoordinate.charAt(0)) - 'A' + 1;  // letter (horizontal)
             int y1 = Integer.parseInt(shotCoordinate.substring(1));               // number (vertical)
+
             if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10) {
                 if (board.getBoard()[x1][y1].equals("M") || board.getBoard()[x1][y1].equals("X")) {
-//                    System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
-                    System.out.print("\nYou hit a ship! Try again:\n> ");
+                    System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
+//                    System.out.print("\nYou hit a ship! Try again:\n> ");
 
                 } else if (board.getBoard()[x1][y1].equals("O")) {
                     board.getBoard()[x1][y1] = "X";
