@@ -87,10 +87,10 @@ public class Game {
                             arrayOfShipLocations[j] = (x1 * 10 + i);
                             j++;
                         }
-                        ship.setLoc(arrayOfShipLocations);
+                        ship.setShipLocation(arrayOfShipLocations);
                         board.printBoard();
                         // remove test below!
-                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getLoc()));
+                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
 //                        System.out.println(Arrays.toString(ship.getLoc()));
 
                         break;
@@ -132,9 +132,9 @@ public class Game {
                             j++;
                         }
                         board.printBoard();
-                        ship.setLoc(arrayOfShipLocations);
+                        ship.setShipLocation(arrayOfShipLocations);
                         // remove test below!
-                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getLoc()));
+                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
 
                         break;
                     } else {
@@ -177,14 +177,16 @@ public class Game {
                     board.getHiddenBoard()[x1][y1] = "X";
                     shipCounter--;
                     board.printHiddenBoard();
-                    if (board.checker(x1, y1)) {
-                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
-                    } else if (!board.checker(x1, y1) && shipCounter == 0) {
-                        System.out.println("You sank the last ship. You won. Congratulations!");
-                        break;
-                    } else {
-                        System.out.println("You sank a ship!");
-                    }
+//                    if (board.checker(x1, y1)) {
+//                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
+//                    } else if (!board.checker(x1, y1) && shipCounter == 0) {
+//                        System.out.println("You sank the last ship. You won. Congratulations!");
+//                        break;
+//                    } else {
+//                        System.out.println("You sank a ship!");
+//                    }
+                    board.shipHitCounter(x1,y1);
+
 
                 } else {
                     board.getBoard()[x1][y1] = "M";

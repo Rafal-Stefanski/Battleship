@@ -10,21 +10,12 @@ public enum Ship {
 
     public String name;
     public int size;
-    public int[] loc;
+    public int[] shipLocation;
 
-
-    public int[] getLoc() {
-        return loc;
-    }
-
-    public void setLoc(int[] loc) {
-        this.loc = loc;
-    }
-
-    Ship(String name, int size, int[] loc) {
+    Ship(String name, int size, int[] shipLocation) {
         this.name = name;
         this.size = size;
-        this.loc = loc;
+        this.shipLocation = shipLocation;
     }
 
     public String getName() {
@@ -33,5 +24,13 @@ public enum Ship {
 
     public int getSize() {
         return size;
+    }
+
+    public int[] getShipLocation() {
+        return shipLocation;
+    }
+
+    public void setShipLocation(int[] shipLocation) {
+        this.shipLocation = shipLocation;
     }
 }
