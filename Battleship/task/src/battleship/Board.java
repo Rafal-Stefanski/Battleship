@@ -65,8 +65,14 @@ public class Board {
         int[] cruiserLoc = Ship.CRUISER.getShipLocation();
         int[] destroyerLoc = Ship.DESTROYER.getShipLocation();
 
-        int hit = checker(x, y, submarineLoc);
-        System.out.println("checker = " + hit + " x = " + x + ", y = " + y);
+//        checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
+        checker(x, y, Ship.BATTLESHIP.getShipLocation());
+        checker(x, y, Ship.SUBMARINE.getShipLocation());
+//        checker(x, y, Ship.CRUISER.getShipLocation());
+//        checker(x, y, Ship.DESTROYER.getShipLocation());
+
+//        int hit = checker(x, y, submarineLoc);
+//        System.out.println("checker = " + hit + " x = " + x + ", y = " + y);
 
 
 //        System.out.println("******* test section / ********");
@@ -89,25 +95,36 @@ public class Board {
 
     }
 
-    public int checker(int x, int y, int[] shipArrayLoc) {
-        int shipLengthLeft = shipArrayLoc.length;
+    public void checker(int x, int y, int[] shipArrayLoc) {
+        int shipLengthLeft = 0;
+
+        boolean sunkenShip = true;
+
+        for (int j = 0; j < shipArrayLoc.length; j++) {
+            if (shipArrayLoc[j] != 0) {
+                shipLengthLeft++;
+                sunkenShip = false;
+            }
+        }
         System.out.println("shipArrayLoc.length " + shipLengthLeft);
 
-        for (int i = 0; i < shipArrayLoc.length; i++) {
-            if (shipArrayLoc[i] == (x * 10 + y)) {
-                shipArrayLoc[i] = 0;
-                System.out.print("\nYou hit a ship! Try again:\n\n> ");
+        while (!sunkenShip) {
+
+            for (int i = 0; i < shipArrayLoc.length; i++) {
+                if (shipArrayLoc[i] == (x * 10 + y)) {
+                    shipArrayLoc[i] = 0;
+                    shipLengthLeft--;
+                    if (shipLengthLeft == 0) {
+                        System.out.println("You sank a ship!");
+                        sunkenShip = true;
+                    } else {
+                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
+
+                        System.out.println("shipArrayLoc.length " + shipLengthLeft);
+                    }
+                }
             }
         }
-        for (int j = 0; j < shipArrayLoc.length; j++) {
-            if (shipArrayLoc[j] == 0) {
-                shipLengthLeft--;
-            }
-        }
-        if (shipLengthLeft == 0) {
-            System.out.println("You sank a ship!");
-        }
-        return shipLengthLeft;
     }
 
 

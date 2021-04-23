@@ -90,7 +90,7 @@ public class Game {
                         ship.setShipLocation(arrayOfShipLocations);
                         board.printBoard();
                         // remove test below!
-                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
+//                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
 //                        System.out.println(Arrays.toString(ship.getLoc()));
 
                         break;
@@ -134,7 +134,7 @@ public class Game {
                         board.printBoard();
                         ship.setShipLocation(arrayOfShipLocations);
                         // remove test below!
-                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
+//                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
 
                         break;
                     } else {
