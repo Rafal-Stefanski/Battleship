@@ -4,6 +4,9 @@ public class Board {
     final private String[][] board = new String[11][11];
     final private String[][] hiddenBoard = new String[11][11];
 
+    private int shipCounter = 7; // 2 ships = 7 cells for testing
+//    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
+
     public String[][] getBoard() {
         return board;
     }
@@ -56,14 +59,13 @@ public class Board {
         System.out.println("\n");
     }
 
-
     public void shipHitCounter(int x, int y) {
 
-        int[] aircraftCarrierLoc = Ship.AIRCRAFT_CARRIER.getShipLocation();
-        int[] battleshipLoc = Ship.BATTLESHIP.getShipLocation();
-        int[] submarineLoc = Ship.SUBMARINE.getShipLocation();
-        int[] cruiserLoc = Ship.CRUISER.getShipLocation();
-        int[] destroyerLoc = Ship.DESTROYER.getShipLocation();
+//        int[] aircraftCarrierLoc = Ship.AIRCRAFT_CARRIER.getShipLocation();
+//        int[] battleshipLoc = Ship.BATTLESHIP.getShipLocation();
+//        int[] submarineLoc = Ship.SUBMARINE.getShipLocation();
+//        int[] cruiserLoc = Ship.CRUISER.getShipLocation();
+//        int[] destroyerLoc = Ship.DESTROYER.getShipLocation();
 
 //        checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
         checker(x, y, Ship.BATTLESHIP.getShipLocation());
@@ -97,6 +99,7 @@ public class Board {
 
     public void checker(int x, int y, int[] shipArrayLoc) {
         int shipLengthLeft = 0;
+//        int shipCounter = Game.shipCounter;
 
         boolean sunkenShip = true;
 
@@ -106,30 +109,33 @@ public class Board {
                 sunkenShip = false;
             }
         }
-        System.out.println("shipArrayLoc.length " + shipLengthLeft);
-
-        while (!sunkenShip) {
+//        System.out.println("** testing ** \nshipArrayLoc.length " + shipLengthLeft);
 
             for (int i = 0; i < shipArrayLoc.length; i++) {
                 if (shipArrayLoc[i] == (x * 10 + y)) {
                     shipArrayLoc[i] = 0;
                     shipLengthLeft--;
-                    if (shipLengthLeft == 0) {
+                    shipCounter--;
+//                    System.out.println("*** testing *** \n" + "shipCounter " + shipCounter);
+                    if (shipLengthLeft == 0 && shipCounter!=0) {
                         System.out.println("You sank a ship!");
                         sunkenShip = true;
-                    } else {
-                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
-
-                        System.out.println("shipArrayLoc.length " + shipLengthLeft);
                     }
+                    if (!sunkenShip) {
+                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
+                    } else if (shipCounter!=0){
+                        System.out.print("\nTry again:\n\n> ");
+                    } else {
+                        System.out.println("You sank the last ship. You won. Congratulations!");
+                    }
+                    break;
                 }
             }
-        }
     }
+}
 
 
     // old checker method
-
 
     // if (contains(aircraftCarrierLoc, 2)) {
     //            System.out.println("Hello 2");
@@ -176,4 +182,3 @@ public class Board {
 //        return result;
 //    }
 
-}
