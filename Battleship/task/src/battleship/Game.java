@@ -60,23 +60,23 @@ public class Game {
                             }
                             if (x1 != 10) {
                                 if (board.getBoard()[x1 + 1][i].equals("O") || board.getBoard()[x1 - 1][i].equals("O")) {
-                                    System.out.println("Error! There is other ship over or under next to this place.\n");
+                                    System.out.println("Error! You placed it too close to another one. Try again:\n");
                                     continue label;
                                 }
                             } else {
                                 if (board.getBoard()[x1 - 1][i].equals("O")) {
-                                    System.out.println("Error! There is other ship below, next to this place.\n");
+                                    System.out.println("Error! You placed it too close to another one. Try again:\n");
                                     continue label;
                                 }
                             }
                             if (y2 != 10) {
                                 if (board.getBoard()[x1][y1 - 1].equals("O") || board.getBoard()[x1][y2 + 1].equals("O")) {
-                                    System.out.println("Error! There is other ship on the left or right next to this place.\n");
+                                    System.out.println("Error! You placed it too close to another one. Try again:\n");
                                     continue label;
                                 }
                             } else {
                                 if (board.getBoard()[x1][y1 - 1].equals("O")) {
-                                    System.out.println("Error! There is other ship on the left next to this place.\n");
+                                    System.out.println("Error! You placed it too close to another one. Try again:\n");
                                     continue label;
                                 }
                             }
@@ -95,7 +95,7 @@ public class Game {
 
                         break;
                     } else {
-                        System.out.println("Error! Wrong ship size! Try again.\n");
+                        System.out.println("Error! Wrong length of the " + ship.getName() + "! Try again:\n");
                     }
                 } else if (y1 == y2) {                      // it's vertical!
                     if ((x2 - x1 + 1) == ship.getSize()) {  // ship size is OK!
@@ -109,13 +109,13 @@ public class Game {
                             }
                             if (x2 != 10) {
                                 if (board.getBoard()[i + 1][y1].equals("O") || board.getBoard()[i - 1][y1].equals("O")) {
-                                    System.out.println("Error! There is other ship over or under next to this place.\n");
+                                    System.out.println("Error! You placed it too close to another one. Try again:\n");
                                     continue label;
                                 }
                             }
                             if (y1 != 10) {
                                 if (board.getBoard()[i][y1 - 1].equals("O") || board.getBoard()[i][y2 + 1].equals("O")) {
-                                    System.out.println("Error! There is other ship on the left or right next to this place.\n");
+                                    System.out.println("Error! You placed it too close to another one. Try again:\n");
                                     continue label;
                                 }
                             } else {
@@ -138,13 +138,14 @@ public class Game {
 
                         break;
                     } else {
-                        System.out.println("Error! Wrong ship size! Try again.\n");
+//                        System.out.println("Error! Wrong ship size! Try again.\n");
+                        System.out.println("Error! Wrong length of the " + ship.getName() + "! Try again:\n");
                     }
                 } else {
-                    System.out.println("Error! Wrong ship location! Looks like it's cross-draw. Try again.\n");
+                    System.out.println("Error! Wrong ship location! Try again.\n");
                 }
             } else {
-                System.out.println("Error! Wrong location! Looks like it's out of board range. Try again.\n");
+                System.out.println("Error! Wrong location! Try again.\n");
             }
         }   // end of while loop
     }

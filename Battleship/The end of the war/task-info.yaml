@@ -712,23 +712,23 @@ feedback:
     \ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~\
     \ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
     \ \nJ ~ ~ O O O O O ~ ~ ~ \n\nEnter the coordinates of the Battleship (4 cells):\n\
-    &gt; &gt; C8 B8\nError! Wrong ship size! Try again.\n\nEnter the coordinates of\
-    \ the Battleship (4 cells):\n&gt; &gt; C8 F8\n\n  1 2 3 4 5 6 7 8 9 10 \nA ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nD ~ ~ ~ ~\
-    \ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nG ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ O O O O O ~\
-    \ ~ ~ \n\nEnter the coordinates of the Submarine (3 cells):\n&gt; &gt; A1 C2\n\
-    Error! Wrong ship location! Looks like it&#39;s cross-draw. Try again.\n\nEnter\
-    \ the coordinates of the Submarine (3 cells):\n&gt; &gt; A1 C1\n\n  1 2 3 4 5\
-    \ 6 7 8 9 10 \nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~\
-    \ O ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ O ~\
-    \ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    J ~ ~ O O O O O ~ ~ ~ \n\nEnter the coordinates of the Cruiser (3 cells):\n&gt;\
-    \ &gt; H1 H3\n\n  1 2 3 4 5 6 7 8 9 10 \nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~ O ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O\
-    \ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH O O O ~ ~ ~ ~ ~ ~ ~\
-    \ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ O O O O O ~ ~ ~ \n\nEnter the coordinates of\
-    \ the Destroyer (2 cells):\n&gt; &gt; G2 E2\nError! Wrong ship size! Try again.\n\
+    &gt; &gt; C8 B8\nError! Wrong length of the Battleship! Try again:\n\nEnter the\
+    \ coordinates of the Battleship (4 cells):\n&gt; &gt; C8 F8\n\n  1 2 3 4 5 6 7\
+    \ 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ O ~\
+    \ ~ \nD ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ O ~ ~ \n\
+    G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
+    \ O O O O O ~ ~ ~ \n\nEnter the coordinates of the Submarine (3 cells):\n&gt;\
+    \ &gt; A1 C2\nError! Wrong ship location! Try again.\n\nEnter the coordinates\
+    \ of the Submarine (3 cells):\n&gt; &gt; A1 C1\n\n  1 2 3 4 5 6 7 8 9 10 \nA O\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~ O ~ ~ \nD ~ ~ ~\
+    \ ~ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nG ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ O O O O O\
+    \ ~ ~ ~ \n\nEnter the coordinates of the Cruiser (3 cells):\n&gt; &gt; H1 H3\n\
+    \n  1 2 3 4 5 6 7 8 9 10 \nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O\
+    \ ~ ~ ~ ~ ~ ~ O ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nF ~ ~ ~\
+    \ ~ ~ ~ ~ O ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH O O O ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nJ ~ ~ O O O O O ~ ~ ~ \n\nEnter the coordinates of the Destroyer\
+    \ (2 cells):\n&gt; &gt; G2 E2\nError! Wrong length of the Destroyer! Try again:\n\
     \nEnter the coordinates of the Destroyer (2 cells):\n&gt; &gt; B5 C5\n\n  1 2\
     \ 3 4 5 6 7 8 9 10 \nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ O ~ ~ ~ ~ ~ \nC O ~ ~ ~\
     \ O ~ ~ O ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nF ~ ~ ~ ~ ~ ~\
@@ -753,53 +753,53 @@ feedback:
     \ 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~\
     \ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~\
     \ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! You sank a ship!\nTry again:\n\
-    \n&gt; &gt; D1\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\
-    \n&gt; &gt; F5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\
-    \n&gt; &gt; B5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ X\
-    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try\
-    \ again:\n\n&gt; &gt; B4\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    B X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed!\
-    \ Try again:\n\n&gt; &gt; C5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE\
+    \ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! You sank a ship!\nSpecify a\
+    \ new target:\n\n&gt; &gt; D1\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
+    E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed!\
+    \ Try again:\n\n&gt; &gt; F5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed!\
+    \ Try again:\n\n&gt; &gt; B5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nB X ~ ~ ~ X ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE\
     \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
     \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit\
-    \ a ship! You sank a ship!\nTry again:\n\n&gt; &gt; H8\n\n  1 2 3 4 5 6 7 8 9\
-    \ 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \n\
-    D M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; F8\n\n  1 2 3 4 5 6 7 8\
-    \ 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~\
-    \ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt; G8\n\n  1 2 3\
-    \ 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X\
-    \ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~\
-    \ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; E8\n\n  1\
-    \ 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~\
-    \ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF ~ ~ ~ ~ M\
-    \ ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt;\
-    \ D8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~\
-    \ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF\
+    \ a ship! Try again:\n\n&gt; &gt; B4\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~\
+    \ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\
+    You missed! Try again:\n\n&gt; &gt; C5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
+    \n\nYou hit a ship! You sank a ship!\nSpecify a new target:\n\n&gt; &gt; H8\n\n\
+    \  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X\
+    \ ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~\
+    \ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; F8\n\
+    \n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X\
+    \ ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~\
+    \ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt;\
+    \ G8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~\
+    \ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF\
+    \ ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt;\
+    \ E8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~\
+    \ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF\
     \ ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~\
     \ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n\
-    &gt; &gt; C8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~\
-    \ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ X ~ ~ \nD M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X\
+    &gt; &gt; D8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~\
+    \ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X\
     \ ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~\
-    \ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! You sank\
-    \ a ship!\nTry again:\n\n&gt; &gt; D8\n\nError! You&#39;ve already shot this spot..\
-    \ Try again:\n\n&gt;"
-  time: Sun, 25 Apr 2021 09:30:14 UTC
+    \ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\
+    \n&gt; &gt; C8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X\
+    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ X ~ ~ \nD M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
+    \ X ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~\
+    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! You\
+    \ sank a ship!\nSpecify a new target:\n\n&gt; &gt; D8\n\nYou hit a ship! Try again:\n\
+    &gt;"
+  time: Sun, 25 Apr 2021 10:13:59 UTC
 record: -1

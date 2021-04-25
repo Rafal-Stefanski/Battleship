@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-12T20:10:57" hostname="THINKPAD-T490" time="1.63">
+<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-25T10:13:57" hostname="THINKPAD-T490" time="1.728">
   <properties/>
-  <testcase name="start" classname="Tests" time="1.63">
-    <failure message="java.lang.AssertionError: Wrong answer in test #2&#10;&#10;Can't parse the game field&#10;Make sure you print it like in examples!&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&gt; &gt; J3 J7&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Battleship (4 cells):&#10;&gt; &gt; C8 B8&#10;Error! Wrong ship size! Try again.&#10;&#10;Enter the coordinates of the Battleship (4 cells):&#10;&gt; &gt; C8 F8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; &gt; A1 C2&#10;Error! Wrong ship location! Looks like it's cross-draw. Try again.&#10;&#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; &gt; A1 C1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Cruiser (3 cells):&#10;&gt; &gt; H1 H3&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H O O O ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt; &gt; G2 E2&#10;Error! Wrong ship size! Try again.&#10;&#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt; &gt; B5 C5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ O ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ O ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H O O O ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;The game starts!&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Take a shot!&#10;&#10;&gt; &gt; A1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; A2&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; B1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; C1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; D1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; F5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; B5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; B4&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; C5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; H8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; F8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; G8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; E8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ X ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; D8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ X ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ X ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; C8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ X ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ X ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ X ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You sank a ship!&#10;&gt; D8&#10;&#10;You hit a ship! Try again:&#10;&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #2
+  <testcase name="start" classname="Tests" time="1.728">
+    <failure message="java.lang.AssertionError: Wrong answer in test #2&#10;&#10;Can't parse the game field&#10;Make sure you print it like in examples!&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&gt; &gt; J3 J7&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Battleship (4 cells):&#10;&gt; &gt; C8 B8&#10;Error! Wrong length of the Battleship! Try again:&#10;&#10;Enter the coordinates of the Battleship (4 cells):&#10;&gt; &gt; C8 F8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; &gt; A1 C2&#10;Error! Wrong ship location! Try again.&#10;&#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; &gt; A1 C1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Cruiser (3 cells):&#10;&gt; &gt; H1 H3&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H O O O ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt; &gt; G2 E2&#10;Error! Wrong length of the Destroyer! Try again:&#10;&#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt; &gt; B5 C5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ O ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ O ~ ~ O ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ O ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H O O O ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ O O O O O ~ ~ ~ &#10;&#10;The game starts!&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Take a shot!&#10;&#10;&gt; &gt; A1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! Try again:&#10;&#10;&gt; &gt; A2&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; B1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! Try again:&#10;&#10;&gt; &gt; C1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! You sank a ship!&#10;Specify a new target:&#10;&#10;&gt; &gt; D1&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; F5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; B5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! Try again:&#10;&#10;&gt; &gt; B4&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; C5&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! You sank a ship!&#10;Specify a new target:&#10;&#10;&gt; &gt; H8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; F8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! Try again:&#10;&#10;&gt; &gt; G8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;You missed! Try again:&#10;&#10;&gt; &gt; E8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ X ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! Try again:&#10;&#10;&gt; &gt; D8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ ~ ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ X ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ X ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! Try again:&#10;&#10;&gt; &gt; C8&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A X M ~ ~ ~ ~ ~ ~ ~ ~ &#10;B X ~ ~ M X ~ ~ ~ ~ ~ &#10;C X ~ ~ ~ X ~ ~ X ~ ~ &#10;D M ~ ~ ~ ~ ~ ~ X ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ X ~ ~ &#10;F ~ ~ ~ ~ M ~ ~ X ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ M ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;&#10;You hit a ship! You sank a ship!&#10;Specify a new target:&#10;&#10;&gt; &gt; D8&#10;&#10;You hit a ship! Try again:&#10;&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #2
 
 Can't parse the game field
 Make sure you print it like in examples!
@@ -42,7 +42,7 @@ J ~ ~ O O O O O ~ ~ ~
 
 Enter the coordinates of the Battleship (4 cells):
 &gt; &gt; C8 B8
-Error! Wrong ship size! Try again.
+Error! Wrong length of the Battleship! Try again:
 
 Enter the coordinates of the Battleship (4 cells):
 &gt; &gt; C8 F8
@@ -61,7 +61,7 @@ J ~ ~ O O O O O ~ ~ ~
 
 Enter the coordinates of the Submarine (3 cells):
 &gt; &gt; A1 C2
-Error! Wrong ship location! Looks like it's cross-draw. Try again.
+Error! Wrong ship location! Try again.
 
 Enter the coordinates of the Submarine (3 cells):
 &gt; &gt; A1 C1
@@ -95,7 +95,7 @@ J ~ ~ O O O O O ~ ~ ~
 
 Enter the coordinates of the Destroyer (2 cells):
 &gt; &gt; G2 E2
-Error! Wrong ship size! Try again.
+Error! Wrong length of the Destroyer! Try again:
 
 Enter the coordinates of the Destroyer (2 cells):
 &gt; &gt; B5 C5
@@ -142,8 +142,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; A2
+
+You hit a ship! Try again:
+
+&gt; &gt; A2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -173,8 +175,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; C1
+
+You hit a ship! Try again:
+
+&gt; &gt; C1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -188,8 +192,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; D1
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+&gt; &gt; D1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -235,8 +242,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; B4
+
+You hit a ship! Try again:
+
+&gt; &gt; B4
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -266,8 +275,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; H8
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+&gt; &gt; H8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -297,8 +309,10 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; G8
+
+You hit a ship! Try again:
+
+&gt; &gt; G8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -328,8 +342,10 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; D8
+
+You hit a ship! Try again:
+
+&gt; &gt; D8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -343,8 +359,10 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; C8
+
+You hit a ship! Try again:
+
+&gt; &gt; C8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -358,13 +376,16 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-&gt; D8
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+&gt; &gt; D8
 
 You hit a ship! Try again:
 &gt;
 	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:131)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:136)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -461,7 +482,7 @@ J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Enter the coordinates of the Submarine (3 cells):
 > > J7 J10
-Error! Wrong ship size! Try again.
+Error! Wrong length of the Submarine! Try again:
 
 Enter the coordinates of the Submarine (3 cells):
 > > J10 J8
@@ -480,7 +501,7 @@ J ~ ~ ~ ~ ~ ~ ~ O O O
 
 Enter the coordinates of the Cruiser (3 cells):
 > > B9 D8
-Error! Wrong ship location! Looks like it's cross-draw. Try again.
+Error! Wrong ship location! Try again.
 
 Enter the coordinates of the Cruiser (3 cells):
 > > B9 D9
@@ -499,7 +520,7 @@ J ~ ~ ~ ~ ~ ~ ~ O O O
 
 Enter the coordinates of the Destroyer (2 cells):
 > > E6 D6
-Error! There is other ship over or under next to this place.
+Error! You placed it too close to another one. Try again:
 
 Enter the coordinates of the Destroyer (2 cells):
 > > I2 J2
@@ -546,8 +567,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> A2
+
+You hit a ship! Try again:
+
+> > A2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -577,8 +600,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C1
+
+You hit a ship! Try again:
+
+> > C1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -592,8 +617,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D1
+
+You hit a ship! Try again:
+
+> > D1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -607,8 +634,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> E4
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > E4
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -638,8 +668,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C9
+
+You hit a ship! Try again:
+
+> > C9
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -653,8 +685,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D9
+
+You hit a ship! Try again:
+
+> > D9
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -668,8 +702,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> E9
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > E9
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -767,8 +804,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> F10
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > F10
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -846,8 +886,10 @@ H ~ M ~ ~ ~ ~ ~ ~ ~ ~
 I ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> J2
+
+You hit a ship! Try again:
+
+> > J2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -861,8 +903,11 @@ H ~ M ~ ~ ~ ~ ~ ~ ~ ~
 I ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> J6
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > J6
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -926,6 +971,8 @@ H ~ M ~ ~ ~ ~ ~ ~ ~ ~
 I ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ X ~ ~ ~ M ~ X X X 
 
+
+You hit a ship! You sank a ship!
 You sank the last ship. You won. Congratulations!
 ?[1;31m
 Start test 2?[0m
@@ -959,7 +1006,7 @@ J ~ ~ O O O O O ~ ~ ~
 
 Enter the coordinates of the Battleship (4 cells):
 > > C8 B8
-Error! Wrong ship size! Try again.
+Error! Wrong length of the Battleship! Try again:
 
 Enter the coordinates of the Battleship (4 cells):
 > > C8 F8
@@ -978,7 +1025,7 @@ J ~ ~ O O O O O ~ ~ ~
 
 Enter the coordinates of the Submarine (3 cells):
 > > A1 C2
-Error! Wrong ship location! Looks like it's cross-draw. Try again.
+Error! Wrong ship location! Try again.
 
 Enter the coordinates of the Submarine (3 cells):
 > > A1 C1
@@ -1012,7 +1059,7 @@ J ~ ~ O O O O O ~ ~ ~
 
 Enter the coordinates of the Destroyer (2 cells):
 > > G2 E2
-Error! Wrong ship size! Try again.
+Error! Wrong length of the Destroyer! Try again:
 
 Enter the coordinates of the Destroyer (2 cells):
 > > B5 C5
@@ -1059,8 +1106,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> A2
+
+You hit a ship! Try again:
+
+> > A2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1090,8 +1139,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C1
+
+You hit a ship! Try again:
+
+> > C1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1105,8 +1156,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D1
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > D1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1152,8 +1206,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> B4
+
+You hit a ship! Try again:
+
+> > B4
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1183,8 +1239,11 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> H8
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > H8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1214,8 +1273,10 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> G8
+
+You hit a ship! Try again:
+
+> > G8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1245,8 +1306,10 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D8
+
+You hit a ship! Try again:
+
+> > D8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1260,8 +1323,10 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C8
+
+You hit a ship! Try again:
+
+> > C8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -1275,8 +1340,11 @@ H ~ ~ ~ ~ ~ ~ ~ M ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D8
+
+You hit a ship! You sank a ship!
+Specify a new target:
+
+> > D8
 
 You hit a ship! Try again:
 ]]></system-out>

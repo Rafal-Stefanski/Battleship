@@ -127,9 +127,10 @@ public class Board {
 
                 if (shipLengthLeft == 0) {
                     System.out.println("You sank a ship!");
-//                    sunkenShip = true;
                 }
-                if (shipCounter != 0) {
+                if (shipCounter != 0 && shipLengthLeft==0) {
+                    System.out.print("Specify a new target:\n\n> ");
+                } else if (shipCounter != 0) {
                     System.out.print("Try again:\n\n> ");
 //                    System.out.println("*** testing *** \n" + "shipCounter " + shipCounter);
                 }
@@ -137,64 +138,9 @@ public class Board {
 //                if (shipLengthLeft == 0 && shipCounter == 0) {
 //                    System.out.println("You sank the last ship. You won. Congratulations!");
 ////                    sunkenShip = true;
-//
-//                }
-//                if (!sunkenShip) {
-////                    System.out.print("\nYou hit a ship! Try again:\n\n> ");
-//                } else {
-////                        System.out.println("You sank the last ship. You won. Congratulations!");
 //                }
                 break;
             }
         }
     }
 }
-
-
-// old checker method
-
-// if (contains(aircraftCarrierLoc, 2)) {
-//            System.out.println("Hello 2");
-//        }
-//
-//        boolean shipLeft = false;
-//
-//        if (x < 10) {
-//            if (board[x - 1][y].equals("O") || board[x + 1][y].equals("O")) {
-//                shipLeft = true;
-//            } else {
-//                shipLeft = false;
-//            }
-//        } else if (x == 10) {
-//            if (board[x - 1][y].equals("O")) {
-//                shipLeft = true;
-//            } else {
-//                shipLeft = false;
-//            }
-//        }
-//        if (y < 10) {
-//            if (board[x][y - 1].equals("O") || board[x][y + 1].equals("O")) {
-//                shipLeft = true;
-//            } else {
-//                shipLeft = false;
-//            }
-//        } else if (y == 10) {
-//            if (board[x][y - 1].equals("O")) {
-//                shipLeft = true;
-//            } else {
-//                shipLeft = false;
-//            }
-//        }
-
-
-//    public static boolean contains(final int[] array, final int v) {
-//        boolean result = false;
-//        for(int i : array){
-//            if(i == v){
-//                result = true;
-//                break;
-//            }
-//        }
-//        return result;
-//    }
-

@@ -47,7 +47,7 @@
 
 2Enter the coordinates of the Submarine (3 cells):
 > > J7 J10
-#Error! Wrong ship size! Try again.
+1Error! Wrong length of the Submarine! Try again:
 
 2Enter the coordinates of the Submarine (3 cells):
 > > J10 J8
@@ -67,7 +67,7 @@
 0Enter the coordinates of the Cruiser (3 cells):
 
 > > B9 D8
-CError! Wrong ship location! Looks like it's cross-draw. Try again.
+'Error! Wrong ship location! Try again.
 
 0Enter the coordinates of the Cruiser (3 cells):
 
@@ -88,7 +88,7 @@
 2Enter the coordinates of the Destroyer (2 cells):
 
 > > E6 D6
-=Error! There is other ship over or under next to this place.
+:Error! You placed it too close to another one. Try again:
 
 2Enter the coordinates of the Destroyer (2 cells):
 
@@ -136,8 +136,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> A2
+
+You hit a ship! Try again:
+
+> > A2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -167,8 +169,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C1
+
+You hit a ship! Try again:
+
+> > C1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -182,8 +186,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D1
+
+You hit a ship! Try again:
+
+> > D1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -197,8 +203,11 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> E4
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > E4
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -228,8 +237,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C9
+
+You hit a ship! Try again:
+
+> > C9
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -243,8 +254,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D9
+
+You hit a ship! Try again:
+
+> > D9
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -258,8 +271,11 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> E9
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > E9
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -357,8 +373,11 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> F10
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > F10
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -436,8 +455,10 @@
 I ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> J2
+
+You hit a ship! Try again:
+
+> > J2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -451,8 +472,11 @@
 I ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> J6
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > J6
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -516,6 +540,8 @@
 I ~ X ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ X ~ ~ ~ M ~ X X X 
 
+
+"You hit a ship! You sank a ship!
 3You sank the last ship. You won. Congratulations!
 [1;31m
 Start test 2[0m
@@ -551,7 +577,7 @@
 3Enter the coordinates of the Battleship (4 cells):
 
 > > C8 B8
-#Error! Wrong ship size! Try again.
+2Error! Wrong length of the Battleship! Try again:
 
 3Enter the coordinates of the Battleship (4 cells):
 
@@ -572,7 +598,7 @@
 2Enter the coordinates of the Submarine (3 cells):
 
 > > A1 C2
-CError! Wrong ship location! Looks like it's cross-draw. Try again.
+'Error! Wrong ship location! Try again.
 
 2Enter the coordinates of the Submarine (3 cells):
 
@@ -609,7 +635,7 @@
 2Enter the coordinates of the Destroyer (2 cells):
 
 > > G2 E2
-#Error! Wrong ship size! Try again.
+1Error! Wrong length of the Destroyer! Try again:
 
 2Enter the coordinates of the Destroyer (2 cells):
 
@@ -657,8 +683,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> A2
+
+You hit a ship! Try again:
+
+> > A2
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -688,8 +716,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C1
+
+You hit a ship! Try again:
+
+> > C1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -703,8 +733,11 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D1
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > D1
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -750,8 +783,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> B4
+
+You hit a ship! Try again:
+
+> > B4
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -781,8 +816,11 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> H8
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > H8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -812,8 +850,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> G8
+
+You hit a ship! Try again:
+
+> > G8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -843,8 +883,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D8
+
+You hit a ship! Try again:
+
+> > D8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -858,8 +900,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> C8
+
+You hit a ship! Try again:
+
+> > C8
 
   1 2 3 4 5 6 7 8 9 10 
 A X M ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -873,7 +917,10 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-You sank a ship!
-> D8
+
+"You hit a ship! You sank a ship!
+Specify a new target:
+
+> > D8
 
 You hit a ship! Try again:
