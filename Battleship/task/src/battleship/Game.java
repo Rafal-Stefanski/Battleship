@@ -150,13 +150,13 @@ public class Game {
         }   // end of while loop
     }
 
-    public int getShipCounter() {
-        return shipCounter;
-    }
+//    public int getShipCounter() {
+//        return shipCounter;
+//    }
 
-    public void setShipCounter(int shipCounter) {
-        this.shipCounter = shipCounter;
-    }
+//    public void setShipCounter(int shipCounter) {
+//        this.shipCounter = shipCounter;
+//    }
 
     public void play() {
 
@@ -184,17 +184,21 @@ public class Game {
                 } else if (board.getBoard()[x1][y1].equals("O")) {
                     board.getBoard()[x1][y1] = "X";
                     board.getHiddenBoard()[x1][y1] = "X";
-                    shipCounter--;
+//                    shipCounter--;
                     board.printHiddenBoard();
 //                    if (board.checker(x1, y1)) {
 //                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
-//                    } else if (!board.checker(x1, y1) && shipCounter == 0) {
-//                        System.out.println("You sank the last ship. You won. Congratulations!");
-//                        break;
-//                    } else {
+//                    } else
+
+                    board.shipHitCounter(x1,y1);
+
+                    if (board.getShipCounter() == 0) {
+                        System.out.println("You sank the last ship. You won. Congratulations!");
+                        break;
+                    }
+//                    else {
 //                        System.out.println("You sank a ship!");
 //                    }
-                    board.shipHitCounter(x1,y1);
 
 
                 } else {
