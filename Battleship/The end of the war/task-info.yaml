@@ -741,61 +741,65 @@ feedback:
     \ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~\
     \ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~\
     \ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \n\nYou sank a ship!\n&gt; A2\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou\
-    \ missed! Try again:\n\n&gt; &gt; B1\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\
-    You sank a ship!\n&gt; C1\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    B X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou sank a ship!\n\
-    &gt; D1\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt;\
-    \ &gt; F5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt;\
-    \ &gt; B5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ X ~ ~\
-    \ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou sank a ship!\n&gt; B4\n\n\
-    \  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~\
-    \ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; C5\n\
-    \n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X\
-    \ ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~\
-    \ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou sank a ship!\n&gt; H8\n\n  1 2 3 4\
-    \ 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~\
-    \ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~\
-    \ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; F8\n\n  1 2\
-    \ 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~\
-    \ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~\
-    \ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou sank a ship!\n&gt; G8\n\n  1 2 3 4 5 6 7\
-    \ 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~\
-    \ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \n\
-    G ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; E8\n\n  1 2 3 4 5 6\
-    \ 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~\
-    \ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~\
-    \ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou sank a ship!\n&gt; D8\n\n  1 2 3 4 5 6 7 8 9 10\
-    \ \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD\
-    \ M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~\
-    \ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \n\nYou sank a ship!\n&gt; C8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ X ~ ~ \nD M ~ ~ ~\
-    \ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~\
-    \ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \n\nYou sank a ship!\n&gt; D8\n\nYou hit a ship! Try again:\n&gt;"
-  time: Mon, 12 Apr 2021 20:10:59 UTC
+    \ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt; A2\n\n  1 2 3 4 5 6 7 8 9 10\
+    \ \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; B1\n\n  1 2 3 4 5 6 7 8\
+    \ 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt; C1\n\n  1 2 3\
+    \ 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! You sank a ship!\nTry again:\n\
+    \n&gt; &gt; D1\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\
+    \n&gt; &gt; F5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\
+    \n&gt; &gt; B5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ X\
+    \ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try\
+    \ again:\n\n&gt; &gt; B4\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \n\
+    B X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed!\
+    \ Try again:\n\n&gt; &gt; C5\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit\
+    \ a ship! You sank a ship!\nTry again:\n\n&gt; &gt; H8\n\n  1 2 3 4 5 6 7 8 9\
+    \ 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \n\
+    D M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ ~ ~ ~ \nG ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; F8\n\n  1 2 3 4 5 6 7 8\
+    \ 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ ~ ~ ~\
+    \ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt; G8\n\n  1 2 3\
+    \ 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~ ~ X\
+    \ ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ M ~ ~\
+    \ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nYou missed! Try again:\n\n&gt; &gt; E8\n\n  1\
+    \ 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~ \nC X ~ ~\
+    \ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF ~ ~ ~ ~ M\
+    \ ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n&gt; &gt;\
+    \ D8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~ ~ ~ ~ ~\
+    \ \nC X ~ ~ ~ X ~ ~ ~ ~ ~ \nD M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X ~ ~ \nF\
+    \ ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nI ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! Try again:\n\n\
+    &gt; &gt; C8\n\n  1 2 3 4 5 6 7 8 9 10 \nA X M ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ M X ~\
+    \ ~ ~ ~ ~ \nC X ~ ~ ~ X ~ ~ X ~ ~ \nD M ~ ~ ~ ~ ~ ~ X ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ X\
+    \ ~ ~ \nF ~ ~ ~ ~ M ~ ~ X ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ M ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ M ~ ~\
+    \ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\n\nYou hit a ship! You sank\
+    \ a ship!\nTry again:\n\n&gt; &gt; D8\n\nError! You&#39;ve already shot this spot..\
+    \ Try again:\n\n&gt;"
+  time: Sun, 25 Apr 2021 09:30:14 UTC
 record: -1

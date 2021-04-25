@@ -4,8 +4,8 @@ public class Board {
     final private String[][] board = new String[11][11];
     final private String[][] hiddenBoard = new String[11][11];
 
-    private int shipCounter = 7; // 2 ships = 7 cells for testing
-//    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
+//    private int shipCounter = 7; // 2 ships = 7 cells for testing
+    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
 
 
     public int getShipCounter() {
@@ -76,11 +76,11 @@ public class Board {
 //        int[] cruiserLoc = Ship.CRUISER.getShipLocation();
 //        int[] destroyerLoc = Ship.DESTROYER.getShipLocation();
 
-//        checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
+        checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
         checker(x, y, Ship.BATTLESHIP.getShipLocation());
         checker(x, y, Ship.SUBMARINE.getShipLocation());
-//        checker(x, y, Ship.CRUISER.getShipLocation());
-//        checker(x, y, Ship.DESTROYER.getShipLocation());
+        checker(x, y, Ship.CRUISER.getShipLocation());
+        checker(x, y, Ship.DESTROYER.getShipLocation());
 
 //        int hit = checker(x, y, submarineLoc);
 //        System.out.println("checker = " + hit + " x = " + x + ", y = " + y);

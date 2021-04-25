@@ -14,11 +14,11 @@ public class Main {
         Board board = new Board();
         game.prepareBoard();
 
-//        game.addShip(Ship.AIRCRAFT_CARRIER);
+        game.addShip(Ship.AIRCRAFT_CARRIER);
         game.addShip(Ship.BATTLESHIP);
         game.addShip(Ship.SUBMARINE);
-//        game.addShip(Ship.CRUISER);
-//        game.addShip(Ship.DESTROYER);
+        game.addShip(Ship.CRUISER);
+        game.addShip(Ship.DESTROYER);
 
 
 //        System.out.println("******* test section ********");
