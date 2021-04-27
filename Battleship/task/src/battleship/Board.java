@@ -12,10 +12,6 @@ public class Board {
         return shipCounter;
     }
 
-    public void setShipCounter(int shipCounter) {
-        this.shipCounter = shipCounter;
-    }
-
     public String[][] getBoard() {
         return board;
     }
@@ -108,12 +104,10 @@ public class Board {
 
     public void checker(int x, int y, int[] shipArrayLoc) {
         int shipLengthLeft = 0;
-        boolean sunkenShip = true;
 
         for (int j = 0; j < shipArrayLoc.length; j++) {
             if (shipArrayLoc[j] != 0) {
                 shipLengthLeft++;
-                sunkenShip = false;
             }
         }
 
@@ -135,10 +129,6 @@ public class Board {
 //                    System.out.println("*** testing *** \n" + "shipCounter " + shipCounter);
                 }
 
-//                if (shipLengthLeft == 0 && shipCounter == 0) {
-//                    System.out.println("You sank the last ship. You won. Congratulations!");
-////                    sunkenShip = true;
-//                }
                 break;
             }
         }

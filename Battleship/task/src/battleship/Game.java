@@ -149,15 +149,7 @@ public class Game {
             }
         }   // end of while loop
     }
-
-//    public int getShipCounter() {
-//        return shipCounter;
-//    }
-
-//    public void setShipCounter(int shipCounter) {
-//        this.shipCounter = shipCounter;
-//    }
-
+    
     public void play() {
 
 //        int shipCounter = (5 + 4 + 3 + 3 + 2);
@@ -177,11 +169,11 @@ public class Game {
             int y1 = Integer.parseInt(shotCoordinate.substring(1));               // number (vertical)
 
             if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10) {
-                if (board.getBoard()[x1][y1].equals("M") || board.getBoard()[x1][y1].equals("X")) {
+                if (board.getBoard()[x1][y1].equals("M")) {
                     System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
 //                    System.out.print("\nYou hit a ship! Try again:\n> ");
 
-                } else if (board.getBoard()[x1][y1].equals("O")) {
+                } else if (board.getBoard()[x1][y1].equals("O") || board.getBoard()[x1][y1].equals("X")) {
                     board.getBoard()[x1][y1] = "X";
                     board.getHiddenBoard()[x1][y1] = "X";
 //                    shipCounter--;
@@ -190,7 +182,7 @@ public class Game {
 //                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
 //                    } else
 
-                    board.shipHitCounter(x1,y1);
+                    board.shipHitCounter(x1, y1);
 
                     if (board.getShipCounter() == 0) {
                         System.out.println("You sank the last ship. You won. Congratulations!");

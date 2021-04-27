@@ -441,6 +441,328 @@ files:
         }
     }
   learner_created: false
+- name: src/battleship/Board.java
+  visible: true
+  text: |-
+    package battleship;
+
+    public class Board {
+        final private String[][] board = new String[11][11];
+        final private String[][] hiddenBoard = new String[11][11];
+
+    //    private int shipCounter = 7; // 2 ships = 7 cells for testing
+        private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
+
+
+        public int getShipCounter() {
+            return shipCounter;
+        }
+
+        public void setShipCounter(int shipCounter) {
+            this.shipCounter = shipCounter;
+        }
+
+        public String[][] getBoard() {
+            return board;
+        }
+
+        public String[][] getHiddenBoard() {
+            return hiddenBoard;
+        }
+
+        public void prepareBoardAndHiddenBoard() {
+
+            for (int i = 0; i < 11; i++) {
+                System.out.println();
+                for (int j = 0; j < 11; j++) {
+                    if (i == 0 && j == 0) {
+                        board[i][j] = " ";
+                        hiddenBoard[i][j] = " ";
+                    } else if (i == 0) {
+                        board[i][j] = Integer.toString(j);
+                        hiddenBoard[i][j] = Integer.toString(j);
+                    } else if (j == 0) {
+                        board[i][j] = Character.toString(64 + i);
+                        hiddenBoard[i][j] = Character.toString(64 + i);
+                    } else {
+                        board[i][j] = "~";
+                        hiddenBoard[i][j] = "~";
+                    }
+                    System.out.print(board[i][j] + " ");
+                }
+            }
+            System.out.println("\n");
+        }
+
+        public void printBoard() {
+            for (int i = 0; i < 11; i++) {
+                System.out.println();
+                for (int j = 0; j < 11; j++) {
+                    System.out.print(board[i][j] + " ");
+                }
+            }
+            System.out.println("\n");
+        }
+
+        public void printHiddenBoard() {
+            for (int i = 0; i < 11; i++) {
+                System.out.println();
+                for (int j = 0; j < 11; j++) {
+                    System.out.print(hiddenBoard[i][j] + " ");
+                }
+            }
+            System.out.println("\n");
+        }
+
+        public void shipHitCounter(int x, int y) {
+
+    //        int[] aircraftCarrierLoc = Ship.AIRCRAFT_CARRIER.getShipLocation();
+    //        int[] battleshipLoc = Ship.BATTLESHIP.getShipLocation();
+    //        int[] submarineLoc = Ship.SUBMARINE.getShipLocation();
+    //        int[] cruiserLoc = Ship.CRUISER.getShipLocation();
+    //        int[] destroyerLoc = Ship.DESTROYER.getShipLocation();
+
+            checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
+            checker(x, y, Ship.BATTLESHIP.getShipLocation());
+            checker(x, y, Ship.SUBMARINE.getShipLocation());
+            checker(x, y, Ship.CRUISER.getShipLocation());
+            checker(x, y, Ship.DESTROYER.getShipLocation());
+
+    //        int hit = checker(x, y, submarineLoc);
+    //        System.out.println("checker = " + hit + " x = " + x + ", y = " + y);
+
+
+    //        System.out.println("******* test section / ********");
+    //        if (checker(x, y, aircraftCarrierLoc) != aircraftCarrierLoc.length) {
+    //            System.out.println("You hit " + Ship.AIRCRAFT_CARRIER.getName() + ". There are: " + checker(x, y, aircraftCarrierLoc) + ", segments left.");
+    //        }
+    //        if (checker(x, y, battleshipLoc) != battleshipLoc.length) {
+    //            System.out.println("You hit " + Ship.BATTLESHIP.getName() + ". There are: " + checker(x, y, battleshipLoc) + ", segments left.");
+    //        }
+    //        if (checker(x, y, submarineLoc) != submarineLoc.length) {
+    //            System.out.println("You hit " + Ship.SUBMARINE.getName() + ". There are: "  + ", segments left.");
+    //        }
+    //        if (checker(x, y, cruiserLoc) != cruiserLoc.length) {
+    //            System.out.println("You hit " + Ship.CRUISER.getName() + ". There are: " + checker(x, y, cruiserLoc) + ", segments left.");
+    //        }
+    //        if (checker(x, y, destroyerLoc) != destroyerLoc.length) {
+    //            System.out.println("You hit " + Ship.DESTROYER.getName() + ". There are: " + checker(x, y, destroyerLoc) + ", segments left.");
+    //        }
+    //        System.out.println("******* / test section ********");
+
+        }
+
+        public void checker(int x, int y, int[] shipArrayLoc) {
+            int shipLengthLeft = 0;
+            boolean sunkenShip = true;
+
+            for (int j = 0; j < shipArrayLoc.length; j++) {
+                if (shipArrayLoc[j] != 0) {
+                    shipLengthLeft++;
+                    sunkenShip = false;
+                }
+            }
+
+            for (int i = 0; i < shipArrayLoc.length; i++) {
+                if (shipArrayLoc[i] == (x * 10 + y)) {
+                    shipArrayLoc[i] = 0;
+                    shipLengthLeft--;
+                    shipCounter--;
+
+                    System.out.print("\nYou hit a ship! ");
+
+                    if (shipLengthLeft == 0) {
+                        System.out.println("You sank a ship!");
+                    }
+                    if (shipCounter != 0 && shipLengthLeft==0) {
+                        System.out.print("Specify a new target:\n\n> ");
+                    } else if (shipCounter != 0) {
+                        System.out.print("Try again:\n\n> ");
+    //                    System.out.println("*** testing *** \n" + "shipCounter " + shipCounter);
+                    }
+
+    //                if (shipLengthLeft == 0 && shipCounter == 0) {
+    //                    System.out.println("You sank the last ship. You won. Congratulations!");
+    ////                    sunkenShip = true;
+    //                }
+                    break;
+                }
+            }
+        }
+    }
+  learner_created: true
+- name: src/battleship/Ship.java
+  visible: true
+  text: |
+    package battleship;
+
+    public enum Ship {
+
+        AIRCRAFT_CARRIER("Aircraft Carrier", 5, new int[5]),
+        BATTLESHIP("Battleship", 4, new int[4]),
+        SUBMARINE("Submarine", 3, new int[3]),
+        CRUISER("Cruiser", 3, new int[3]),
+        DESTROYER("Destroyer", 2, new int[2]);
+
+        public String name;
+        public int size;
+        public int[] shipLocation;
+
+        Ship(String name, int size, int[] shipLocation) {
+            this.name = name;
+            this.size = size;
+            this.shipLocation = shipLocation;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getSize() {
+            return size;
+        }
+
+        public int[] getShipLocation() {
+            return shipLocation;
+        }
+
+        public void setShipLocation(int[] shipLocation) {
+            this.shipLocation = shipLocation;
+        }
+    }
+  learner_created: true
+- name: src/battleship/Game.java
+  visible: true
+  text: "package battleship;\n\nimport java.util.Scanner;\n\npublic class Game {\n\
+    \n    private final Board board = new Board();\n    public static Scanner scanner\
+    \ = new Scanner(System.in);\n    static int shipCounter;\n\n    public void prepareBoard()\
+    \ {\n        board.prepareBoardAndHiddenBoard();\n    }\n\n    public void addShip(Ship\
+    \ ship) {\n        // added array to store location of each ship\n        int[]\
+    \ arrayOfShipLocations = new int[ship.getSize()];\n\n        // lets get some\
+    \ coordinates\n        scanner.reset();\n        scanner = new Scanner(System.in);\n\
+    \n        label:\n        while (true) {\n            System.out.print(\"Enter\
+    \ the coordinates of the \" + ship.getName() + \" (\" + ship.getSize() + \" cells):\\\
+    n> \");\n            String coordinate1 = scanner.next();\n            String\
+    \ coordinate2 = scanner.next();\n\n            // coordinates on board to ints\n\
+    \            int x1 = Character.toUpperCase(coordinate1.charAt(0)) - 'A' + 1;\
+    \  // letter (horizontal)\n            int y1 = Integer.parseInt(coordinate1.substring(1));\
+    \               // number (vertical)\n\n            int x2 = Character.toUpperCase(coordinate2.charAt(0))\
+    \ - 'A' + 1;  // letter (horizontal)\n            int y2 = Integer.parseInt(coordinate2.substring(1));\
+    \               // number (vertical)\n\n            // checking and validating\
+    \ coordinates range and placement on the board\n            if (x1 > 0 && y1 >\
+    \ 0 && x1 <= 10 && y1 <= 10 && x2 > 0 && y2 > 0 && x2 <= 10 && y2 <= 10) {\n \
+    \               // changing places when first value is larger\n              \
+    \  if (x1 > x2) {\n                    int tempX1 = x2;\n                    x2\
+    \ = x1;\n                    x1 = tempX1;\n                }\n               \
+    \ if (y1 > y2) {\n                    int tempY1 = y2;\n                    y2\
+    \ = y1;\n                    y1 = tempY1;\n                }\n\n             \
+    \   // checking positions\n                if (x1 == x2) {                   \
+    \          // it's horizontal!\n                    if ((y2 - y1 + 1) == ship.getSize())\
+    \ {  // ship size is OK!\n//                    System.out.println(\"size OK!\"\
+    );\n\n                        //checking placement on the board for collisions\
+    \ and overlapping - horizontally\n                        for (int i = y1; i <=\
+    \ y2; i++) {\n                            if (board.getBoard()[x1][i].equals(\"\
+    O\")) {\n                                System.out.println(\"Error! This place\
+    \ is occupied.\\n\");\n                                continue label;\n     \
+    \                       }\n                            if (x1 != 10) {\n     \
+    \                           if (board.getBoard()[x1 + 1][i].equals(\"O\") || board.getBoard()[x1\
+    \ - 1][i].equals(\"O\")) {\n                                    System.out.println(\"\
+    Error! You placed it too close to another one. Try again:\\n\");\n           \
+    \                         continue label;\n                                }\n\
+    \                            } else {\n                                if (board.getBoard()[x1\
+    \ - 1][i].equals(\"O\")) {\n                                    System.out.println(\"\
+    Error! You placed it too close to another one. Try again:\\n\");\n           \
+    \                         continue label;\n                                }\n\
+    \                            }\n                            if (y2 != 10) {\n\
+    \                                if (board.getBoard()[x1][y1 - 1].equals(\"O\"\
+    ) || board.getBoard()[x1][y2 + 1].equals(\"O\")) {\n                         \
+    \           System.out.println(\"Error! You placed it too close to another one.\
+    \ Try again:\\n\");\n                                    continue label;\n   \
+    \                             }\n                            } else {\n      \
+    \                          if (board.getBoard()[x1][y1 - 1].equals(\"O\")) {\n\
+    \                                    System.out.println(\"Error! You placed it\
+    \ too close to another one. Try again:\\n\");\n                              \
+    \      continue label;\n                                }\n                  \
+    \          }\n                        }\n                        int j = 0;\n\
+    \                        for (int i = y1; i <= y2; i++) {\n                  \
+    \          board.getBoard()[x1][i] = \"O\";\n                            arrayOfShipLocations[j]\
+    \ = (x1 * 10 + i);\n                            j++;\n                       \
+    \ }\n                        ship.setShipLocation(arrayOfShipLocations);\n   \
+    \                     board.printBoard();\n                        // remove test\
+    \ below!\n//                        System.out.println(\">> testing ship's locations\
+    \ array:\\n>> \" + ship + Arrays.toString(ship.getShipLocation()));\n//      \
+    \                  System.out.println(Arrays.toString(ship.getLoc()));\n\n   \
+    \                     break;\n                    } else {\n                 \
+    \       System.out.println(\"Error! Wrong length of the \" + ship.getName() +\
+    \ \"! Try again:\\n\");\n                    }\n                } else if (y1\
+    \ == y2) {                      // it's vertical!\n                    if ((x2\
+    \ - x1 + 1) == ship.getSize()) {  // ship size is OK!\n//                    System.out.println(\"\
+    size OK!\");\n\n                        //checking placement on the board for\
+    \ collisions and overlapping - vertically\n                        for (int i\
+    \ = x1; i <= x2; i++) {\n                            if (board.getBoard()[i][y1].equals(\"\
+    O\")) {\n                                System.out.println(\"Error! This place\
+    \ is occupied.\\n\");\n                                continue label;\n     \
+    \                       }\n                            if (x2 != 10) {\n     \
+    \                           if (board.getBoard()[i + 1][y1].equals(\"O\") || board.getBoard()[i\
+    \ - 1][y1].equals(\"O\")) {\n                                    System.out.println(\"\
+    Error! You placed it too close to another one. Try again:\\n\");\n           \
+    \                         continue label;\n                                }\n\
+    \                            }\n                            if (y1 != 10) {\n\
+    \                                if (board.getBoard()[i][y1 - 1].equals(\"O\"\
+    ) || board.getBoard()[i][y2 + 1].equals(\"O\")) {\n                          \
+    \          System.out.println(\"Error! You placed it too close to another one.\
+    \ Try again:\\n\");\n                                    continue label;\n   \
+    \                             }\n                            } else {\n      \
+    \                          if (board.getBoard()[i][y1 - 1].equals(\"O\")) {\n\
+    \                                    System.out.println(\"Error! There is other\
+    \ ship on the left next to this place.\\n\");\n                              \
+    \      continue label;\n                                }\n                  \
+    \          }\n                        }\n                        int j = 0;\n\
+    \                        for (int i = x1; i <= x2; i++) {\n                  \
+    \          board.getBoard()[i][y1] = \"O\";\n                            arrayOfShipLocations[j]\
+    \ = (i * 10 + y1);\n                            j++;\n                       \
+    \ }\n                        board.printBoard();\n                        ship.setShipLocation(arrayOfShipLocations);\n\
+    \                        // remove test below!\n//                        System.out.println(\"\
+    >> testing ship's locations array:\\n>> \" + ship + Arrays.toString(ship.getShipLocation()));\n\
+    \n                        break;\n                    } else {\n//           \
+    \             System.out.println(\"Error! Wrong ship size! Try again.\\n\");\n\
+    \                        System.out.println(\"Error! Wrong length of the \" +\
+    \ ship.getName() + \"! Try again:\\n\");\n                    }\n            \
+    \    } else {\n                    System.out.println(\"Error! Wrong ship location!\
+    \ Try again.\\n\");\n                }\n            } else {\n               \
+    \ System.out.println(\"Error! Wrong location! Try again.\\n\");\n            }\n\
+    \        }   // end of while loop\n    }\n    \n    public void play() {\n\n//\
+    \        int shipCounter = (5 + 4 + 3 + 3 + 2);\n//        shipCounter = 7;  //\
+    \ test counter\n\n        System.out.println(\"The game starts!\");\n        board.printHiddenBoard();\n\
+    \        System.out.print(\"Take a shot!\\n\\n> \");\n\n        // scanning, checking\
+    \ and validating shots coordinates.\n        while (true) {\n            scanner.reset();\n\
+    \            scanner = new Scanner(System.in);\n            String shotCoordinate\
+    \ = scanner.next();\n            // coordinates on board to ints\n           \
+    \ int x1 = Character.toUpperCase(shotCoordinate.charAt(0)) - 'A' + 1;  // letter\
+    \ (horizontal)\n            int y1 = Integer.parseInt(shotCoordinate.substring(1));\
+    \               // number (vertical)\n\n            if (x1 > 0 && y1 > 0 && x1\
+    \ <= 10 && y1 <= 10) {\n                if (board.getBoard()[x1][y1].equals(\"\
+    M\")) {\n                    System.out.print(\"\\nError! You've already shot\
+    \ this spot.. Try again:\\n\\n> \");\n//                    System.out.print(\"\
+    \\nYou hit a ship! Try again:\\n> \");\n\n                } else if (board.getBoard()[x1][y1].equals(\"\
+    O\") || board.getBoard()[x1][y1].equals(\"X\")) {\n                    board.getBoard()[x1][y1]\
+    \ = \"X\";\n                    board.getHiddenBoard()[x1][y1] = \"X\";\n//  \
+    \                  shipCounter--;\n                    board.printHiddenBoard();\n\
+    //                    if (board.checker(x1, y1)) {\n//                       \
+    \ System.out.print(\"\\nYou hit a ship! Try again:\\n\\n> \");\n//           \
+    \         } else\n\n                    board.shipHitCounter(x1, y1);\n\n    \
+    \                if (board.getShipCounter() == 0) {\n                        System.out.println(\"\
+    You sank the last ship. You won. Congratulations!\");\n                      \
+    \  break;\n                    }\n//                    else {\n//           \
+    \             System.out.println(\"You sank a ship!\");\n//                  \
+    \  }\n\n\n                } else {\n                    board.getBoard()[x1][y1]\
+    \ = \"M\";\n                    board.getHiddenBoard()[x1][y1] = \"M\";\n    \
+    \                board.printHiddenBoard();\n                    System.out.print(\"\
+    You missed! Try again:\\n\\n> \");\n                }\n//                Board.printBoard();\n\
+    //                break;\n            } else {\n                System.out.print(\"\
+    \\nError! You entered the wrong coordinates! Try again:\\n\\n> \");\n        \
+    \    }\n        }\n    }\n}\n"
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/667/implement#comment
 status: Unchecked
 record: -1
