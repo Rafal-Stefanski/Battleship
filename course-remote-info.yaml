@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/397107/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Sun, 02 May 2021 18:31:04 UTC
+update_date: Thu, 06 May 2021 21:02:53 UTC
 stages:
 - id: 663
   step: 10594
@@ -26,8 +26,8 @@ topics:
     theory_id: 6865
   - title: Introduction to operating systems
     theory_id: 9704
-  - title: Introduction to OOP
-    theory_id: 3614
+  - title: Computer programming
+    theory_id: 8739
   - title: Introduction to Java
     theory_id: 3500
   - title: Basic literals
@@ -46,6 +46,8 @@ topics:
     theory_id: 3513
   - title: Scanning the input
     theory_id: 9055
+  - title: Introduction to OOP
+    theory_id: 3614
   - title: Arithmetic operations
     theory_id: 3519
   - title: Integer types and operations
@@ -86,12 +88,6 @@ topics:
     theory_id: 3532
   - title: Type casting
     theory_id: 3510
-  - title: Command line overview
-    theory_id: 8977
-  - title: Parameters and options
-    theory_id: 9746
-  - title: Running programs on your computer
-    theory_id: 3746
   - title: Calling a method
     theory_id: 10973
   - title: Declaring a method
@@ -122,6 +118,12 @@ topics:
     theory_id: 3552
   - title: Throwing exceptions
     theory_id: 3553
+  - title: Command line overview
+    theory_id: 8977
+  - title: Parameters and options
+    theory_id: 9746
+  - title: Running programs on your computer
+    theory_id: 3746
   - title: Files
     theory_id: 3635
   - title: Writing files
