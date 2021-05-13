@@ -6,7 +6,6 @@ public class Game {
 
     private final Board board = new Board();
     public static Scanner scanner = new Scanner(System.in);
-    static int shipCounter;
 
     public void prepareBoard() {
         board.prepareBoardAndHiddenBoard();

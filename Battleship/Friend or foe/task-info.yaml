@@ -763,6 +763,12 @@ files:
     \\nError! You entered the wrong coordinates! Try again:\\n\\n> \");\n        \
     \    }\n        }\n    }\n}\n"
   learner_created: true
+- name: src/battleship/Player.java
+  visible: true
+  learner_created: true
+- name: src/battleship/Skirmish.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/667/implement#comment
 status: Unchecked
 record: -1

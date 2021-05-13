@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/397107/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 06 May 2021 21:02:53 UTC
+update_date: Thu, 13 May 2021 18:46:26 UTC
 stages:
 - id: 663
   step: 10594
@@ -22,6 +22,8 @@ stages:
   is_completed: false
 topics:
   0:
+  - title: JVM, JRE, and JDK
+    theory_id: 3499
   - title: Units of information
     theory_id: 6865
   - title: Introduction to operating systems
@@ -74,8 +76,6 @@ topics:
     theory_id: 3504
   - title: Write, compile, and run
     theory_id: 3739
-  - title: JVM, JRE, and JDK
-    theory_id: 3499
   - title: Errors in programs
     theory_id: 3536
   - title: What is an exception

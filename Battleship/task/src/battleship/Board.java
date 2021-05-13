@@ -32,8 +32,8 @@ public class Board {
                     board[i][j] = Integer.toString(j);
                     hiddenBoard[i][j] = Integer.toString(j);
                 } else if (j == 0) {
-                    board[i][j] = Character.toString(64 + i);
-                    hiddenBoard[i][j] = Character.toString(64 + i);
+                    board[i][j] = Character.toString((char) (64 + i));
+                    hiddenBoard[i][j] = Character.toString((char) (64 + i));
                 } else {
                     board[i][j] = "~";
                     hiddenBoard[i][j] = "~";

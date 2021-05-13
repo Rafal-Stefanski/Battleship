@@ -1,4 +1,26 @@
-class User {
+abstract class BaseEntity {
+
+    protected long id;
+    protected long version;
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public long getVersion() {
+        return version;
+    }
+
+    public void setVersion(long version) {
+        this.version = version;
+    }
+}
+
+class User extends BaseEntity {
 
     protected long id;
 
@@ -31,7 +53,7 @@ class User {
     }
 }
 
-class Visit {
+class Visit extends BaseEntity  {
 
     protected long id;
 
@@ -74,7 +96,7 @@ class Visit {
     }
 }
 
-class WebSite {
+class WebSite extends BaseEntity {
 
     protected long id;
 

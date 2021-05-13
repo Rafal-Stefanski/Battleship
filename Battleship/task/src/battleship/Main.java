@@ -10,24 +10,38 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Game game = new Game();
-        Board board = new Board();
-        game.prepareBoard();
+        Skirmish skirmish = new Skirmish();
 
-        game.addShip(Ship.AIRCRAFT_CARRIER);
-        game.addShip(Ship.BATTLESHIP);
-        game.addShip(Ship.SUBMARINE);
-        game.addShip(Ship.CRUISER);
-        game.addShip(Ship.DESTROYER);
+        skirmish.skirmish();
 
-
-//        System.out.println("******* test section ********");
-////        System.out.println(">> testing ship's locations array:\n>> " + Ship.AIRCRAFT_CARRIER + Arrays.toString(Ship.AIRCRAFT_CARRIER.getLoc()));
-//        System.out.println(Ship.BATTLESHIP + Arrays.toString(Ship.BATTLESHIP.getShipLocation()));
-//        System.out.println(Ship.SUBMARINE + Arrays.toString(Ship.SUBMARINE.getShipLocation()));
-//        System.out.println("******* test section ********");
-
-        game.play();
+//        Game gamePlayer1 = new Game();
+//        Game gamePlayer2 = new Game();
+//
+//        gamePlayer1.prepareBoard();
+//
+//        gamePlayer1.addShip(Ship.AIRCRAFT_CARRIER);
+//        gamePlayer1.addShip(Ship.BATTLESHIP);
+//        gamePlayer1.addShip(Ship.SUBMARINE);
+//        gamePlayer1.addShip(Ship.CRUISER);
+//        gamePlayer1.addShip(Ship.DESTROYER);
+//
+//        gamePlayer2.prepareBoard();
+//
+//        gamePlayer2.addShip(Ship.AIRCRAFT_CARRIER);
+//        gamePlayer2.addShip(Ship.BATTLESHIP);
+//        gamePlayer2.addShip(Ship.SUBMARINE);
+//        gamePlayer2.addShip(Ship.CRUISER);
+//        gamePlayer2.addShip(Ship.DESTROYER);
+//
+//
+////        System.out.println("******* test section ********");
+//////        System.out.println(">> testing ship's locations array:\n>> " + Ship.AIRCRAFT_CARRIER + Arrays.toString(Ship.AIRCRAFT_CARRIER.getLoc()));
+////        System.out.println(Ship.BATTLESHIP + Arrays.toString(Ship.BATTLESHIP.getShipLocation()));
+////        System.out.println(Ship.SUBMARINE + Arrays.toString(Ship.SUBMARINE.getShipLocation()));
+////        System.out.println("******* test section ********");
+//
+//        gamePlayer1.play();
+//        gamePlayer2.play();
     }
 
 
