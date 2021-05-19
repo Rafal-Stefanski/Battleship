@@ -149,12 +149,63 @@ public class Game {
         }   // end of while loop
     }
     
-    public void play() {
-
-//        int shipCounter = (5 + 4 + 3 + 3 + 2);
-//        shipCounter = 7;  // test counter
+    public void playWithYourself() {
 
         System.out.println("The game starts!");
+        board.printHiddenBoard();
+        System.out.print("Take a shot!\n\n> ");
+
+        // scanning, checking and validating shots coordinates.
+        while (true) {
+            scanner.reset();
+            scanner = new Scanner(System.in);
+            String shotCoordinate = scanner.next();
+            // coordinates on board to ints
+            int x1 = Character.toUpperCase(shotCoordinate.charAt(0)) - 'A' + 1;  // letter (horizontal)
+            int y1 = Integer.parseInt(shotCoordinate.substring(1));               // number (vertical)
+
+            if (x1 > 0 && y1 > 0 && x1 <= 10 && y1 <= 10) {
+                if (board.getBoard()[x1][y1].equals("M")) {
+                    System.out.print("\nError! You've already shot this spot.. Try again:\n\n> ");
+//                    System.out.print("\nYou hit a ship! Try again:\n> ");
+
+                } else if (board.getBoard()[x1][y1].equals("O") || board.getBoard()[x1][y1].equals("X")) {
+                    board.getBoard()[x1][y1] = "X";
+                    board.getHiddenBoard()[x1][y1] = "X";
+//                    shipCounter--;
+                    board.printHiddenBoard();
+//                    if (board.checker(x1, y1)) {
+//                        System.out.print("\nYou hit a ship! Try again:\n\n> ");
+//                    } else
+
+                    board.shipHitCounter(x1, y1);
+
+                    if (board.getShipCounter() == 0) {
+                        System.out.println("You sank the last ship. You won. Congratulations!");
+                        break;
+                    }
+//                    else {
+//                        System.out.println("You sank a ship!");
+//                    }
+
+
+                } else {
+                    board.getBoard()[x1][y1] = "M";
+                    board.getHiddenBoard()[x1][y1] = "M";
+                    board.printHiddenBoard();
+                    System.out.print("You missed! Try again:\n\n> ");
+                }
+//                Board.printBoard();
+//                break;
+            } else {
+                System.out.print("\nError! You entered the wrong coordinates! Try again:\n\n> ");
+            }
+        }
+    }
+    public void playWithAnotherPlayer() {
+
+        System.out.println("The game starts!");
+
         board.printHiddenBoard();
         System.out.print("Take a shot!\n\n> ");
 

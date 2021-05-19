@@ -4,8 +4,8 @@ public class Board {
     final private String[][] board = new String[11][11];
     final private String[][] hiddenBoard = new String[11][11];
 
-//    private int shipCounter = 7; // 2 ships = 7 cells for testing
-    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
+    private int shipCounter = 2; // 1 ship
+//    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
 
 
     public int getShipCounter() {
@@ -66,39 +66,11 @@ public class Board {
 
     public void shipHitCounter(int x, int y) {
 
-//        int[] aircraftCarrierLoc = Ship.AIRCRAFT_CARRIER.getShipLocation();
-//        int[] battleshipLoc = Ship.BATTLESHIP.getShipLocation();
-//        int[] submarineLoc = Ship.SUBMARINE.getShipLocation();
-//        int[] cruiserLoc = Ship.CRUISER.getShipLocation();
-//        int[] destroyerLoc = Ship.DESTROYER.getShipLocation();
-
         checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
         checker(x, y, Ship.BATTLESHIP.getShipLocation());
         checker(x, y, Ship.SUBMARINE.getShipLocation());
         checker(x, y, Ship.CRUISER.getShipLocation());
         checker(x, y, Ship.DESTROYER.getShipLocation());
-
-//        int hit = checker(x, y, submarineLoc);
-//        System.out.println("checker = " + hit + " x = " + x + ", y = " + y);
-
-
-//        System.out.println("******* test section / ********");
-//        if (checker(x, y, aircraftCarrierLoc) != aircraftCarrierLoc.length) {
-//            System.out.println("You hit " + Ship.AIRCRAFT_CARRIER.getName() + ". There are: " + checker(x, y, aircraftCarrierLoc) + ", segments left.");
-//        }
-//        if (checker(x, y, battleshipLoc) != battleshipLoc.length) {
-//            System.out.println("You hit " + Ship.BATTLESHIP.getName() + ". There are: " + checker(x, y, battleshipLoc) + ", segments left.");
-//        }
-//        if (checker(x, y, submarineLoc) != submarineLoc.length) {
-//            System.out.println("You hit " + Ship.SUBMARINE.getName() + ". There are: "  + ", segments left.");
-//        }
-//        if (checker(x, y, cruiserLoc) != cruiserLoc.length) {
-//            System.out.println("You hit " + Ship.CRUISER.getName() + ". There are: " + checker(x, y, cruiserLoc) + ", segments left.");
-//        }
-//        if (checker(x, y, destroyerLoc) != destroyerLoc.length) {
-//            System.out.println("You hit " + Ship.DESTROYER.getName() + ". There are: " + checker(x, y, destroyerLoc) + ", segments left.");
-//        }
-//        System.out.println("******* / test section ********");
 
     }
 
