@@ -4,6 +4,37 @@ import java.util.Arrays;
 
 /**
  * Rules of the game Battleship https://en.wikipedia.org/wiki/Battleship_(game)
+ *
+ * protocol for 2 players game:
+ * player1 - boardPlayer1 - with ships
+ *         - board4shotsPlayer1 - board with hits and misses aimed at boardPlayer2
+ *
+ * player2 - boardPlayer2 - with ships
+ *         - board4shotsPlayer2 - board with hits and misses aimed at boardPlayer1
+ *
+ *      Game stars.
+ *      Player 1 adds ships
+ *      Player 2 adds ships
+ *
+ *      Take a shot - command, Player 1 stars
+ *      board4shotsPlayer1
+ *      -----------------
+ *      boardPlayer1
+ *
+ *      player 1 takes a shot:
+ *      if hits puts X on boards4shotsPlayer1 and boardPlayer 2
+ *      if misses puts M ---||----
+ *      switch
+ *
+ *      Take a shot - command, Player 2
+ *      board4shotsPlayer2
+ *      -----------------
+ *      boardPlayer2
+ *
+ *      player 2 takes a shot:
+ *      the same..
+ *      switch
+ *
  */
 
 public class Main {
