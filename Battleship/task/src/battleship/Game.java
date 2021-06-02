@@ -4,14 +4,17 @@ import java.util.Scanner;
 
 public class Game {
 
-    private final Board board = new Board();
+//    private final Board board = new Board();
+    Board boardPlayer1 = new Board();
+    Board boardPlayer2 = new Board();
+
     public static Scanner scanner = new Scanner(System.in);
 
-    public void prepareBoard() {
+    public void prepareBoard(Board board) {
         board.prepareBoardAndHiddenBoard();
     }
 
-    public void addShip(Ship ship) {
+    public void addShip(Ship ship, Board board) {
         // added array to store location of each ship
         int[] arrayOfShipLocations = new int[ship.getSize()];
 
@@ -149,7 +152,7 @@ public class Game {
         }   // end of while loop
     }
     
-    public void playWithYourself() {
+    public void playWithYourself(Board board) {
 
         System.out.println("The game starts!");
         board.printHiddenBoard();
@@ -202,11 +205,14 @@ public class Game {
             }
         }
     }
-    public void playWithAnotherPlayer() {
+
+    public void playWithAnotherPlayer(Board boardPlayer1, Board boardPlayer2) {
 
         System.out.println("The game starts!");
 
-        board.printHiddenBoard();
+        boardPlayer2.printHiddenBoard();
+        System.out.println("---------------------");
+        boardPlayer1.printBoard();
         System.out.print("Take a shot!\n\n> ");
 
         // scanning, checking and validating shots coordinates.
@@ -244,9 +250,9 @@ public class Game {
 
 
                 } else {
-                    board.getBoard()[x1][y1] = "M";
-                    board.getHiddenBoard()[x1][y1] = "M";
-                    board.printHiddenBoard();
+                    boardPlayer1.getBoard()[x1][y1] = "M";
+                    boardPlayer1.getHiddenBoard()[x1][y1] = "M";
+                    boardPlayer1.printHiddenBoard();
                     System.out.print("You missed! Try again:\n\n> ");
                 }
 //                Board.printBoard();
