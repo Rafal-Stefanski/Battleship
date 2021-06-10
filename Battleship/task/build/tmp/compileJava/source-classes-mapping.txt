@@ -8,5 +8,3 @@ battleship/Skirmish.java
  battleship.Skirmish
 battleship/Ship.java
  battleship.Ship
-battleship/Player.java
- battleship.Player

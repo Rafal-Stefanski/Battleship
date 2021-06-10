@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-05-13T20:38:25" hostname="THINKPAD-T490" time="0.455">
+<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-10T16:55:19" hostname="THINKPAD-T490" time="0.307">
   <properties/>
-  <testcase name="start" classname="Tests" time="0.455">
-    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;After asking for the Aircraft Carrier coordinates, you should request the coordinates of the Battleship in that way:&#10;&quot;Enter the coordinates of the Battleship (4 cells):&quot;&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;?[0;1m&#10;Battleship console game,&#10;created by Rafal Stefanski.&#10;?[0;0m&#10;Player 1, place your ships on the game field&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&gt; &gt; F3 F7&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Press Enter and pass the move to another player&#10;?[H?[2J" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+  <testcase name="start" classname="Tests" time="0.307">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;After starting the program, you should request the coordinates of the Aircraft Carrier in that way:&#10;&quot;Enter the coordinates of the Aircraft Carrier (5 cells):&quot;&#10;&#10;Please find below the output of your program during this failed test.&#10;&#10;---&#10;&#10;Player 1, place your ships on the game field&#10;&#10;  1 2 3 4 5 6 7 8 9 10 &#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;&#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
 
-After asking for the Aircraft Carrier coordinates, you should request the coordinates of the Battleship in that way:
-&quot;Enter the coordinates of the Battleship (4 cells):&quot;
+After starting the program, you should request the coordinates of the Aircraft Carrier in that way:
+&quot;Enter the coordinates of the Aircraft Carrier (5 cells):&quot;
 
 Please find below the output of your program during this failed test.
-Note that the '&gt;' character indicates the beginning of the input line.
 
 ---
 
-?[0;1m
-Battleship console game,
-created by Rafal Stefanski.
-?[0;0m
 Player 1, place your ships on the game field
 
   1 2 3 4 5 6 7 8 9 10 
@@ -30,25 +25,10 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-Enter the coordinates of the Aircraft Carrier (5 cells):
-&gt; &gt; F3 F7
-
-  1 2 3 4 5 6 7 8 9 10 
-A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-F ~ ~ O O O O O ~ ~ ~ 
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-
-Press Enter and pass the move to another player
-?[H?[2J
+Enter the coordinates of the Destroyer (2 cells):
+&gt;
 	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:136)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:141)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,10 +80,6 @@ Press Enter and pass the move to another player
   </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-?[0;1m
-Battleship console game,
-created by Rafal Stefanski.
-?[0;0m
 Player 1, place your ships on the game field
 
   1 2 3 4 5 6 7 8 9 10 
@@ -118,22 +94,7 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-Enter the coordinates of the Aircraft Carrier (5 cells):
-> > F3 F7
-
-  1 2 3 4 5 6 7 8 9 10 
-A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-F ~ ~ O O O O O ~ ~ ~ 
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-
-Press Enter and pass the move to another player
+Enter the coordinates of the Destroyer (2 cells):
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

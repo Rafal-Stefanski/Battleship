@@ -1,9 +1,5 @@
 [1;31m
 Start test 1[0m
-[0;1m
-Battleship console game,
-created by Rafal Stefanski.
-[0;0m
 .Player 1, place your ships on the game field
 
   1 2 3 4 5 6 7 8 9 10 
@@ -18,20 +14,4 @@
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-9Enter the coordinates of the Aircraft Carrier (5 cells):
-
-> > F3 F7
-
-  1 2 3 4 5 6 7 8 9 10 
-A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-F ~ ~ O O O O O ~ ~ ~ 
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-
-1Press Enter and pass the move to another player
+2Enter the coordinates of the Destroyer (2 cells):

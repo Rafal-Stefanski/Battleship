@@ -763,29 +763,20 @@ files:
     \\nError! You entered the wrong coordinates! Try again:\\n\\n> \");\n        \
     \    }\n        }\n    }\n}\n"
   learner_created: true
-- name: src/battleship/Player.java
-  visible: true
-  learner_created: true
 - name: src/battleship/Skirmish.java
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/667/implement#comment
 status: Failed
 feedback:
-  message: "Wrong answer in test #1\n\nAfter asking for the Aircraft Carrier coordinates,\
-    \ you should request the coordinates of the Battleship in that way:\n&quot;Enter\
-    \ the coordinates of the Battleship (4 cells):&quot;\n\nPlease find below the\
-    \ output of your program during this failed test.\nNote that the &#39;&gt;&#39;\
-    \ character indicates the beginning of the input line.\n\n---\n\n\nBattleship\
-    \ console game,\ncreated by Rafal Stefanski.\n\nPlayer 1, place your ships on\
+  message: "Wrong answer in test #1\n\nAfter starting the program, you should request\
+    \ the coordinates of the Aircraft Carrier in that way:\n&quot;Enter the coordinates\
+    \ of the Aircraft Carrier (5 cells):&quot;\n\nPlease find below the output of\
+    \ your program during this failed test.\n\n---\n\nPlayer 1, place your ships on\
     \ the game field\n\n  1 2 3 4 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~\
     \ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~\
     \ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~\
     \ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nEnter the coordinates\
-    \ of the Aircraft Carrier (5 cells):\n&gt; &gt; F3 F7\n\n  1 2 3 4 5 6 7 8 9 10\
-    \ \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \n\nPress Enter and pass the move to another player\n"
-  time: Thu, 13 May 2021 20:38:26 UTC
+    \ of the Destroyer (2 cells):\n&gt;"
+  time: Thu, 10 Jun 2021 16:55:20 UTC
 record: -1

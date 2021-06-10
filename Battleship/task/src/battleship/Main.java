@@ -1,5 +1,6 @@
 package battleship;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 /**
@@ -40,39 +41,41 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
+        Game game = new Game();
+        Board boardPlayer1 = new Board();
+        Board boardPlayer2 = new Board();
 
-        Skirmish skirmish = new Skirmish();
+        System.out.println("Player 1, place your ships on the game field");
+        boardPlayer1.prepareBoardAndHiddenBoard();
 
-        skirmish.skirmish();
+//        boardPlayer1.addShip(Ship.AIRCRAFT_CARRIER);
+//        boardPlayer1.addShip(Ship.BATTLESHIP);
+//        boardPlayer1.addShip(Ship.SUBMARINE);
+//        boardPlayer1.addShip(Ship.CRUISER);
+        boardPlayer1.addShip(Ship.DESTROYER);
 
-//        Game gamePlayer1 = new Game();
-//        Game gamePlayer2 = new Game();
-//
-//        gamePlayer1.prepareBoard();
-//
-//        gamePlayer1.addShip(Ship.AIRCRAFT_CARRIER);
-//        gamePlayer1.addShip(Ship.BATTLESHIP);
-//        gamePlayer1.addShip(Ship.SUBMARINE);
-//        gamePlayer1.addShip(Ship.CRUISER);
-//        gamePlayer1.addShip(Ship.DESTROYER);
-//
-//        gamePlayer2.prepareBoard();
-//
-//        gamePlayer2.addShip(Ship.AIRCRAFT_CARRIER);
-//        gamePlayer2.addShip(Ship.BATTLESHIP);
-//        gamePlayer2.addShip(Ship.SUBMARINE);
-//        gamePlayer2.addShip(Ship.CRUISER);
-//        gamePlayer2.addShip(Ship.DESTROYER);
-//
-//
-////        System.out.println("******* test section ********");
-//////        System.out.println(">> testing ship's locations array:\n>> " + Ship.AIRCRAFT_CARRIER + Arrays.toString(Ship.AIRCRAFT_CARRIER.getLoc()));
-////        System.out.println(Ship.BATTLESHIP + Arrays.toString(Ship.BATTLESHIP.getShipLocation()));
-////        System.out.println(Ship.SUBMARINE + Arrays.toString(Ship.SUBMARINE.getShipLocation()));
-////        System.out.println("******* test section ********");
-//
-//        gamePlayer1.play();
-//        gamePlayer2.play();
+        Game.promptEnterKey();
+        System.out.println("Player 2, place your ships on the game field");
+        boardPlayer2.prepareBoardAndHiddenBoard();
+
+//        boardPlayer2.addShip(Ship.AIRCRAFT_CARRIER);
+//        boardPlayer2.addShip(Ship.BATTLESHIP);
+//        boardPlayer2.addShip(Ship.SUBMARINE);
+//        boardPlayer2.addShip(Ship.CRUISER);
+        boardPlayer2.addShip(Ship.DESTROYER);
+
+        Game.promptEnterKey();
+        //        System.out.println("The game starts!");
+        game.playTwoPlayers(boardPlayer1, boardPlayer2);
+
+//        System.out.println("******* test section ********");
+////        System.out.println(">> testing ship's locations array:\n>> " + Ship.AIRCRAFT_CARRIER + Arrays.toString(Ship.AIRCRAFT_CARRIER.getLoc()));
+//        System.out.println(Ship.BATTLESHIP + Arrays.toString(Ship.BATTLESHIP.getShipLocation()));
+//        System.out.println(Ship.SUBMARINE + Arrays.toString(Ship.SUBMARINE.getShipLocation()));
+//        System.out.println("******* test section ********");
+
+
+
     }
 
 
