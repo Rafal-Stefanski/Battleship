@@ -6,5 +6,9 @@ battleship/Game.java
  battleship.Game
 battleship/Skirmish.java
  battleship.Skirmish
+battleship/ShipType.java
+ battleship.ShipType
+battleship/ShipInit.java
+ battleship.ShipInit
 battleship/Ship.java
  battleship.Ship

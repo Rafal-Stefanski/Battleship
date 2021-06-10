@@ -766,17 +766,16 @@ files:
 - name: src/battleship/Skirmish.java
   visible: true
   learner_created: true
+- name: src/battleship/ShipType.java
+  visible: true
+  learner_created: true
+- name: src/battleship/ShipInit.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/667/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: "Wrong answer in test #1\n\nAfter starting the program, you should request\
-    \ the coordinates of the Aircraft Carrier in that way:\n&quot;Enter the coordinates\
-    \ of the Aircraft Carrier (5 cells):&quot;\n\nPlease find below the output of\
-    \ your program during this failed test.\n\n---\n\nPlayer 1, place your ships on\
-    \ the game field\n\n  1 2 3 4 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nEnter the coordinates\
-    \ of the Destroyer (2 cells):\n&gt;"
-  time: Thu, 10 Jun 2021 16:55:20 UTC
+  message: Well done! You finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Thu, 10 Jun 2021 19:14:00 UTC
 record: -1

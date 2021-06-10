@@ -8,9 +8,14 @@ public class Board {
     final private String[][] board = new String[11][11];
     final private String[][] hiddenBoard = new String[11][11];
 
-    private int shipCounter = 2; // 1 ship (DESTROYER for testing)
-//    private int shipCounter = 5; // 1 ship (CRUISER for testing) + 1 ship (DESTROYER for testing)
-//    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
+    ShipInit aircraftCarrier = new ShipInit("Aircraft Carrier", 5, new int[5]);
+    ShipInit battleship = new ShipInit("Battleship", 4, new int[4]);
+    ShipInit submarine = new ShipInit("Submarine", 3, new int[3]);
+    ShipInit cruiser = new ShipInit("Cruiser", 3, new int[3]);
+    ShipInit destroyer = new ShipInit("Destroyer", 2, new int[2]);
+
+//    private int shipCounter = 2; // 1 ship (DESTROYER for testing)
+    private int shipCounter = (5 + 4 + 3 + 3 + 2); // all ships
 
     public int getShipCounter() {
         return shipCounter;
@@ -48,7 +53,15 @@ public class Board {
         System.out.println("\n");
     }
 
-    public void addShip(Ship ship) {
+    public void addShips() {
+        addShip(aircraftCarrier);
+        addShip(battleship);
+        addShip(submarine);
+        addShip(cruiser);
+        addShip(destroyer);
+    }
+
+    public void addShip(ShipInit ship) {
         // added array to store location of each ship
         int[] arrayOfShipLocations = new int[ship.getSize()];
 
@@ -125,9 +138,6 @@ public class Board {
                         }
                         ship.setShipLocation(arrayOfShipLocations);
                         printBoard();
-//                         remove test below!
-//                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
-//                        System.out.println(Arrays.toString(ship.getShipLocation()));
 
                         break;
                     } else {
@@ -169,12 +179,8 @@ public class Board {
                         }
                         printBoard();
                         ship.setShipLocation(arrayOfShipLocations);
-                        // remove test below!
-//                        System.out.println(">> testing ship's locations array:\n>> " + ship + Arrays.toString(ship.getShipLocation()));
-
                         break;
                     } else {
-//                        System.out.println("Error! Wrong ship size! Try again.\n");
                         System.out.println("Error! Wrong length of the " + ship.getName() + "! Try again:\n");
                     }
                 } else {
@@ -204,24 +210,21 @@ public class Board {
                 System.out.print(hiddenBoard[i][j] + " ");
             }
         }
-//        System.out.println("\n");
     }
 
     public void shipHitCounter(int x, int y) {
-
-        checker(x, y, Ship.AIRCRAFT_CARRIER.getShipLocation());
-        checker(x, y, Ship.BATTLESHIP.getShipLocation());
-        checker(x, y, Ship.SUBMARINE.getShipLocation());
-        checker(x, y, Ship.CRUISER.getShipLocation());
-        checker(x, y, Ship.DESTROYER.getShipLocation());
-
+        checker(x, y, aircraftCarrier.getShipLocation());
+        checker(x, y, battleship.getShipLocation());
+        checker(x, y, submarine.getShipLocation());
+        checker(x, y, cruiser.getShipLocation());
+        checker(x, y, destroyer.getShipLocation());
     }
 
     public void checker(int x, int y, int[] shipArrayLoc) {
         int shipLengthLeft = 0;
 
-        for (int j = 0; j < shipArrayLoc.length; j++) {
-            if (shipArrayLoc[j] != 0) {
+        for (int k : shipArrayLoc) {
+            if (k != 0) {
                 shipLengthLeft++;
             }
         }
@@ -239,11 +242,6 @@ public class Board {
                 if (shipCounter != 0 && shipLengthLeft==0) {
                     System.out.print("Specify a new target:\n\n> ");
                 }
-                else if (shipCounter != 0) {
-//                    System.out.print("Try again:\n\n> ");
-                    System.out.println("*** testing *** \n" + "shipCounter " + shipCounter);
-                }
-
                 break;
             }
         }
